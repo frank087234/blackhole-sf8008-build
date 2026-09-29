@@ -21,8 +21,6 @@ EXTRA_OEMAKE = "KSRC=${STAGING_KERNEL_DIR}"
 
 require kcflags.inc
 
-# WPA3-SAE, through KCFLAGS because this Makefile has no USER_EXTRA_CFLAGS hook
-KCFLAGS:append = " -DCONFIG_KERNEL_PATCH_EXTERNAL_AUTH"
 
 do_install() {
     install -d ${D}${nonarch_base_libdir}/modules/${KERNEL_VERSION}/kernel/drivers/net/wireless
