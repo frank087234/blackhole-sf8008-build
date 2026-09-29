@@ -38,20 +38,18 @@ PNG = "logo-black-image.png \
 	logo-white.png"
 
 do_install() {
-        install -d ${D}/boot
-        install -d ${D}${datadir}/dreambox-bootlogo
-        for i in ${MVI}; do
-                install ${S}/$i ${D}${datadir}/dreambox-bootlogo/$i
-                ln -sf ${datadir}/dreambox-bootlogo/$i ${D}/boot/$i
-        done
-        ln -sf dreambox-bootlogo/bootlogo.mvi ${D}${datadir}/bootlogo.mvi
-        ln -sf dreambox-bootlogo/backdrop.mvi ${D}${datadir}/backdrop.mvi
-        install -d ${D}${datadir}/logo
-        for i in ${PNG}; do
-                install ${S}/$i ${D}${datadir}/logo
-        done
-        install -d ${D}/${sysconfdir}/init.d
-        install -m 0755 ${S}/bootlogo.sh ${D}/${sysconfdir}/init.d/bootlogo
+	install -d ${D}/boot
+	install -d ${D}${datadir}
+	for i in ${MVI}; do
+		install ${S}/$i ${D}${datadir}
+		ln -sf ${datadir}/$i ${D}/boot/$i
+	done
+	install -d ${D}${datadir}/logo
+	for i in ${PNG}; do
+		install ${S}/$i ${D}${datadir}/logo
+	done
+	install -d ${D}/${sysconfdir}/init.d
+	install -m 0755 ${S}/bootlogo.sh ${D}/${sysconfdir}/init.d/bootlogo
 }
 
 PACKAGE_ARCH := "${MACHINE_ARCH}"
