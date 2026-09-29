@@ -20,3 +20,12 @@ build/
 tmp/
 sstate-cache/
 downloads/
+
+# macOS
+.DS_Store
+._*
+
+# editor / OS junk (safe additions)
+Thumbs.db
+*.swp
+*~
