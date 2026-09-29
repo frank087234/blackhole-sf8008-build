@@ -10,3 +10,5 @@
 site.conf
 bblayers.conf
 *~
+pn-buildlist
+task-depends.dot
