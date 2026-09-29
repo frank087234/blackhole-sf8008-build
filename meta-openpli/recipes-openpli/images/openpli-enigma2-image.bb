@@ -45,6 +45,13 @@ ENIGMA2_PLUGINS = " \
 
 DEPENDS += " \
 	enigma2 \
+        blackhole-components \
+        blackhole-base-userland \
+    bh-defaultsettings \
+    blackhole-startup-logo \
+    blackhole-radio-logo \
+        blackhole-iflatfhd \
+        blackhole-pyc-userland \
 	enigma-info \
 	package-index \
 	"
@@ -69,6 +76,13 @@ IMAGE_INSTALL = " \
 	e2fsprogs-mke2fs \
 	e2fsprogs-tune2fs \
 	enigma2 \
+        blackhole-components \
+        blackhole-base-userland \
+    bh-defaultsettings \
+    blackhole-startup-logo \
+    blackhole-radio-logo \
+        blackhole-iflatfhd \
+        blackhole-pyc-userland \
 	nano \
 	mc \
 	mc-shell \
@@ -144,7 +158,7 @@ IMAGE_INSTALL = " \
 
 GETEXTRA = "edid-decode"
 
-export IMAGE_BASENAME = "openpli-enigma2"
+export IMAGE_BASENAME = "BlackHole-13.5"
 
 # Prevent locales-archive creation to save some space
 IMAGE_LOCALES_ARCHIVE = ""
