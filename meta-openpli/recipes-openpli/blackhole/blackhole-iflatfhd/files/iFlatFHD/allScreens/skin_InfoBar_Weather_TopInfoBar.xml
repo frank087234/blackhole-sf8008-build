@@ -1,0 +1,96 @@
+<skin>
+<screen name="IBWeatherTopBarWidget">
+    <eLabel name="DB" position="0,0" size="1920,90" backgroundColor="background2" zPosition="-8" />
+    <eLabel name="DB" position="0,92" size="1920,5" zPosition="-8" backgroundColor="background" />
+    <eLabel name="line_u" position="0,93" size="1920,1" zPosition="5" backgroundColor="line_u" />
+    <!-- weather  -->
+    <eLabel name="" text="‡" font="symbol; 40" position="531,40" size="44,45" backgroundColor="background2" zPosition="5" halign="center" transparent="1" foregroundColor="blue" />
+    <eLabel name="" text="Ģ" font="symbol; 38" position="536,5" size="30,45" backgroundColor="background2" zPosition="5" halign="center" transparent="1" foregroundColor="blue" />
+    <eLabel name="" text="ı" font="symbol; 60" position="190,15" size="30,70" backgroundColor="background2" zPosition="1" halign="center" transparent="1" foregroundColor="red" valign="bottom" />
+    <widget noWrap="1" font="Console; 30" render="Label" position="225,5" size="300,42" source="session.CurrentService" zPosition="5" halign="left" transparent="1" backgroundColor="background2" valign="center" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Location</convert>
+    </widget>
+	<widget noWrap="1" foregroundColor="foreground3" backgroundColor="background2" font="Console2; 27" render="Label" position="225,50" size="300,38" source="session.CurrentService" zPosition="3" halign="left" transparent="1">
+     <convert type="iFlatMSNWeather2">Skytext</convert>
+    </widget>
+    <widget noWrap="1" font="LCD; 50" foregroundColor="foreground3" render="Label" position="95,15" size="88,60" source="session.CurrentService" transparent="1" zPosition="2" halign="left" backgroundColor="background2">
+      <convert type="iFlatMSNWeather2">Temp</convert>
+    </widget>
+    <widget alphatest="blend" render="iFlatPiconUni" path="iFlatFHD/weather/weather_icons" position="15,5" size="80,80" source="session.CurrentService" transparent="1" zPosition="1">
+      <convert type="iFlatMSNWeather2">Picon</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background2" font="Regular; 30" render="Label" position="570,43" size="200,40" source="session.CurrentService" zPosition="5" halign="left" transparent="1" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Windspeed</convert>
+    </widget>
+	<widget noWrap="1" backgroundColor="background2" font="Regular; 30" render="Label" position="690,43" size="270,40" source="session.CurrentService" zPosition="5" halign="left" transparent="1" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Wind</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background2" font="Regular; 30" render="Label" position="570,5" size="150,40" source="session.CurrentService" zPosition="1" halign="left" transparent="1" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Humidity</convert>
+    </widget>
+    <widget alphatest="blend" render="iFlatPiconUni" path="iFlatFHD/weather/weather_icons" position="855,5" size="80,80" source="session.CurrentService" transparent="1" zPosition="1">
+      <convert type="iFlatMSNWeather2">Picon1</convert>
+    </widget>
+    <eLabel name="" text="-" position="994,60" size="23,30" font="Regular; 30" foregroundColor="foreground3" backgroundColor="background2" transparent="1" zPosition="1" halign="center" valign="center" />
+    <widget noWrap="1" backgroundColor="background2" font="Console; 27" render="Label" position="935,5" size="150,33" source="session.CurrentService" zPosition="1" halign="left" transparent="1" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Day1</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background2" font="Regular; 24" render="Label" position="1018,60" size="60,30" source="session.CurrentService" zPosition="1" halign="center" transparent="1" valign="center" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Hightemp1</convert>
+    </widget>
+    <widget backgroundColor="background2" font="Regular; 24" render="Label" position="940,60" size="53,30" source="session.CurrentService" zPosition="1" halign="left" transparent="1" noWrap="1" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Lowtemp1</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background2" font="Console2; 24" foregroundColor="foreground3" render="Label" position="935,33" size="185,30" source="session.CurrentService" zPosition="2" halign="left" transparent="1" valign="center">
+      <convert type="iFlatMSNWeather2">Skytext1</convert>
+    </widget>
+    <eLabel name="" text="-" position="1262,60" size="23,30" font="Regular; 30" foregroundColor="foreground3" backgroundColor="background2" transparent="1" zPosition="1" halign="center" valign="center" />
+    <widget alphatest="blend" render="iFlatPiconUni" path="iFlatFHD/weather/weather_icons" position="1125,5" size="80,80" source="session.CurrentService" transparent="1" zPosition="1">
+      <convert type="iFlatMSNWeather2">Picon2</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background2" font="Console; 27" render="Label" position="1205,6" size="150,33" source="session.CurrentService" zPosition="1" halign="left" transparent="1" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Day2</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background2" font="Regular; 24" render="Label" position="1285,60" size="60,30" source="session.CurrentService" zPosition="1" halign="center" transparent="1" valign="center" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Hightemp2</convert>
+    </widget>
+    <widget backgroundColor="background2" font="Regular; 24" render="Label" position="1208,60" size="53,30" source="session.CurrentService" zPosition="1" halign="left" transparent="1" noWrap="1" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Lowtemp2</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background2" font="Console2; 24" foregroundColor="foreground3" render="Label" position="1203,33" size="185,30" source="session.CurrentService" zPosition="2" halign="left" transparent="1" valign="center">
+      <convert type="iFlatMSNWeather2">Skytext2</convert>
+    </widget>
+    <eLabel name="" text="-" position="1521,60" size="23,30" font="Regular; 30" foregroundColor="foreground3" backgroundColor="background2" transparent="1" zPosition="1" halign="center" />
+    <widget alphatest="blend" render="iFlatPiconUni" path="iFlatFHD/weather/weather_icons" position="1385,5" size="80,80" source="session.CurrentService" transparent="1" zPosition="1">
+      <convert type="iFlatMSNWeather2">Picon3</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background2" font="Console; 27" render="Label" position="1465,5" size="150,33" source="session.CurrentService" zPosition="1" halign="left" transparent="1" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Day3</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background2" font="Regular; 24" render="Label" position="1544,60" size="60,30" source="session.CurrentService" zPosition="1" halign="center" transparent="1" valign="center" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Hightemp3</convert>
+    </widget>
+    <widget backgroundColor="background2" font="Regular; 24" render="Label" position="1468,59" size="53,30" source="session.CurrentService" zPosition="1" halign="left" transparent="1" noWrap="1" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Lowtemp3</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background2" font="Console2; 24" foregroundColor="foreground3" render="Label" position="1465,33" size="185,30" source="session.CurrentService" zPosition="2" halign="left" transparent="1" valign="center">
+      <convert type="iFlatMSNWeather2">Skytext3</convert>
+    </widget>
+    <eLabel name="" text="-" position="1788,60" size="23,30" font="Regular; 30" foregroundColor="foreground3" backgroundColor="background2" transparent="1" zPosition="1" halign="center" />
+    <widget alphatest="blend" render="iFlatPiconUni" path="iFlatFHD/weather/weather_icons" position="1655,5" size="80,80" source="session.CurrentService" transparent="1" zPosition="1">
+      <convert type="iFlatMSNWeather2">Picon4</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background2" font="Console; 27" render="Label" position="1735,5" size="150,33" source="session.CurrentService" zPosition="1" halign="left" transparent="1" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Day4</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background2" font="Regular; 24" render="Label" position="1810,60" size="53,30" source="session.CurrentService" zPosition="1" halign="center" transparent="1" valign="center" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Hightemp4</convert>
+    </widget>
+    <widget backgroundColor="background2" font="Regular; 24" render="Label" position="1735,60" size="53,30" source="session.CurrentService" zPosition="1" halign="left" transparent="1" noWrap="1" foregroundColor="foreground3">
+      <convert type="iFlatMSNWeather2">Lowtemp4</convert>
+    </widget>
+    <widget backgroundColor="background2" font="Console2; 24" foregroundColor="foreground3" render="Label" position="1735,33" size="185,30" source="session.CurrentService" zPosition="2" halign="left" transparent="1" valign="center" noWrap="1">
+      <convert type="iFlatMSNWeather2">Skytext4</convert>
+    </widget>
+</screen>
+</skin>

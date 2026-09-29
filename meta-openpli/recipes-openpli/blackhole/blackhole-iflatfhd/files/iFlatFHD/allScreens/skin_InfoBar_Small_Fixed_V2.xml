@@ -1,0 +1,32 @@
+<skin>
+
+<screen name="InfoBar" position="0,0" size="1920,1080" title="Infobar" flags="wfNoBorder" backgroundColor="transparent" transparent="0">
+  <eLabel name="IB" position="0,895" size="1920,185" zPosition="-10" backgroundColor="background" />
+  <widget source="session.CurrentService" render="Picon" position="15,942" zPosition="5" size="220,132" transparent="1" alphatest="blend">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="250,942" size="1674,132" font="Regular; 120" foregroundColor="foreground" backgroundColor="foreground" transparent="1" valign="top">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Progress" foregroundColor="progress" position="15,932" size="960,5" zPosition="1" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="session.Event_Now" render="iFlatRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=1500,always=0" position="15,898" size="960,35" font="Regular; 30" halign="left" valign="top" backgroundColor="background2" transparent="1" foregroundColor="foreground3" zPosition="2" noWrap="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="976,898" size="140,35" font="Regular; 30" halign="center" valign="center" backgroundColor="background2" transparent="1" foregroundColor="foreground3" zPosition="2">
+    <convert type="EventTime">Remaining</convert>
+    <convert type="RemainingToText">InMinutes</convert>
+  </widget>
+  <eLabel name="" position="1549,898" size="90,35" transparent="1" text="SNR:" font="Regular; 28" halign="center" backgroundColor="background2" foregroundColor="foreground3" zPosition="1" />
+  <eLabel name="" position="1754,898" size="90,35" text="AGC:" font="Regular; 28" transparent="1" halign="center" backgroundColor="background2" foregroundColor="foreground3" zPosition="1" />
+  <widget backgroundColor="background2" foregroundColor="foreground3" font="Regular; 28" halign="center" noWrap="1" position="1621,898" render="Label" size="100,35" source="session.FrontendStatus" transparent="1" zPosition="1" valign="center">
+    <convert type="FrontendInfo">SNR</convert>
+  </widget>
+  <widget source="Frontend" position="1824,898" size="100,35" render="Label" font="Regular; 28" backgroundColor="background2" transparent="1" halign="center" foregroundColor="foreground3" zPosition="1">
+    <convert type="FrontendInfo">AGC</convert>
+  </widget>
+  <eLabel name="" position="-1,895" size="1920,40" backgroundColor="background2" />
+</screen>
+  
+</skin>

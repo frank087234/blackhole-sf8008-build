@@ -1,0 +1,17 @@
+<skin>
+
+  <colors>
+    <color name="chs_desc" value="#00ba55d3" /> <!-- violet -->
+    <color name="chs_progress" value="#00ba55d3" /> <!-- violet -->
+    <color name="chs_progress_sel" value="#00ba55d3" /> <!-- violet -->
+    <color name="chs_progressbd_sel" value="#00ba55d3" /> <!-- violet -->
+  </colors>
+ 
+</skin>
+
+<!--
+colorEventProgressbar="chs_progress"
+colorEventProgressbarSelected="chs_progress_sel"
+colorEventProgressbarBorderSelected="chs_progressbd_sel"
+scrollbarSliderForegroundColor="scrollbarsfgc"
+scrollbarSliderBorderColor="scrollbarsbgc" /-->

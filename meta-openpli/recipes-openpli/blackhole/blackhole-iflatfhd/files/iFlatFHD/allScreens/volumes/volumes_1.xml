@@ -1,0 +1,8 @@
+<skin>
+  <screen name="Volume" render="Label" position="0,0" size="90,1080" zPosition="10" backgroundColor="background2">
+    <eLabel name="" text="" font="symbol; 50" position="15,1007" size="60,60" backgroundColor="background2" zPosition="1" halign="center" transparent="1" />
+    <widget name="Volume" position="30,115" size="25,870" orientation="orBottomToTop" backgroundColor="background2" foregroundColor="progress_fg_volume" transparent="0" zPosition="3" render="Progress" borderWidth="1" borderColor="blue" />
+    <widget render="VolumeText" source="global.CurrentTime" position="0,15" size="90,75" font="LCD; 70" halign="center" valign="center" zPosition="6" foregroundColor="foregroundColor2" backgroundColor="backgroundColor2" transparent="1" />
+    <eLabel name="" position="0,0" size="90,1080" backgroundColor="background2" zPosition="-1" />
+  </screen>
+</skin>

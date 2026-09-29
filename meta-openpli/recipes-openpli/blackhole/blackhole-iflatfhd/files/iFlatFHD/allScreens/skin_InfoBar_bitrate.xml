@@ -1,0 +1,15 @@
+<skin>
+
+<screen name="IBbitrateWidget">
+	<!-- /* bitrate -->
+	<widget source="session.CurrentService" render="Label" position="1716,950" size="250,32" font="Regular; 24" zPosition="3" halign="left"  backgroundColor="background" foregroundColor="foreground" transparent="1" >
+		<convert type="iFlatBitrate">Video: %V Kbit/s</convert>
+	</widget>
+	<widget source="session.CurrentService" render="Label" position="1720,987" size="250,32" font="Regular; 24" zPosition="3" halign="left"  backgroundColor="background" foregroundColor="foreground" transparent="1" >
+		<convert type="iFlatBitrate">Audio :%A Kbit/s</convert>
+	</widget>
+	<!-- bitrate */-->
+</screen>
+
+
+</skin>

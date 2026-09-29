@@ -1,0 +1,25 @@
+﻿<skin>
+
+<screen name="ChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
+  <panel name="p_topbar" />
+  <panel name="p_bottombar" />
+  <panel name="dateclock" />
+  <panel name="p_color_labels" />
+  <panel name="NumberEpgchannellist" />
+  <eLabel name="line_s" position="0,61" size="780,915" zPosition="-1" backgroundColor="background" transparent="0" />
+  <eLabel name="line_s" position="0,956" size="1920,60" zPosition="-1" backgroundColor="background" />
+  <widget source="ServiceEvent" position="1255,0" size="95,57" render="Picon" transparent="1" alphatest="blend" zPosition="2">
+    <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget source="Event" render="Label" position="20,956" size="1895,60" transparent="1" font="Regular; 27" halign="left" valign="top" backgroundColor="background" foregroundColor="CoolSelBG" zPosition="5">
+      <convert type="EventName">ExtendedDescription</convert>
+  </widget>
+  <widget source="Title" position="15,6" size="1220,50" render="iFlatFavName" font="Regular; 42" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="list" position="20,76" size="745,875" foregroundColor="foreground" backgroundColor="background" colorServiceWithAdvertisment="chs_advertise" colorServiceDescription="chs_desc" colorServiceDescriptionSelected="chs_desc_sel" foregroundColorSelected="chs_fg_sel" foregroundColorServiceNotAvail="chs_notavail" colorServiceRecording="chs_record" progressbarHeight="13" progressBarWidth="55" colorEventProgressbar="chs_progress" colorEventProgressbarSelected="chs_progress_sel" colorEventProgressbarBorder="chs_progressbd" colorEventProgressbarBorderSelected="chs_progressbd_sel" serviceItemHeight="35" serviceNumberFont="Regular;28" serviceNameFont="Regular;28" serviceInfoFont="Regular;28" scrollbarMode="showOnDemand" scrollbarWidth="3" scrollbarSliderForegroundColor="scrollbarsfgc" scrollbarSliderBorderColor="scrollbarsbgc" scrollbarSliderBorderWidth="0" valign="top" />
+  <widget name="key_red" position="15,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="key_green" position="310,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="key_yellow" position="605,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="key_blue" position="900,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+</screen>
+
+</skin>

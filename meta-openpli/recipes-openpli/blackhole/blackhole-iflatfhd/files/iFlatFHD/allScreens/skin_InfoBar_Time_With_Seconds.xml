@@ -1,0 +1,11 @@
+<skin>
+
+    <screen name="IBTimeSEcondsWidget">
+      <!-- /* Time With Seconds -->
+      <widget source="global.CurrentTime" render="Label" position="1708,903" size="190,55" font="Regular; 40" halign="right" foregroundColor="foreground" backgroundColor="background" transparent="1" valign="top">
+        <convert type="ClockToText">WithSeconds</convert>
+      </widget>
+      <!-- /* Time With Seconds -->
+    </screen>
+
+</skin>

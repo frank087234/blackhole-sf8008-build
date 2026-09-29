@@ -1,0 +1,9 @@
+<skin>
+<screen name="IBCAMNAAMEWidget">
+	<!-- /* Cam Info Name -->
+	<widget source="session.CurrentService" render="Label" position="10,1035" size="240,40" font="Regular; 30" zPosition="3" halign="center" noWrap="1"  backgroundColor="background2" foregroundColor="foreground3" transparent="1" >
+		<convert type="iFlatCamdRAED">Camd</convert>
+	</widget>
+	<!-- Cam Info Name */-->
+</screen>
+</skin>

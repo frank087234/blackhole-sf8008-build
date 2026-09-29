@@ -1,0 +1,15 @@
+<skin>
+
+<screen name="IBWeatherWidget">
+	<!-- /* Wetter -->
+	<widget alphatest="blend" render="iFlatPiconUni" path="iFlatFHD/weather/weather_icons" position="1755,1024" size="58,58" source="session.CurrentService" transparent="1" zPosition="8">
+		<convert type="iFlatMSNWeather2">Picon</convert>
+	</widget>
+	<widget noWrap="1" backgroundColor="background2" render="Label" position="1810,1028" size="100,40" font="Regular; 35" source="session.CurrentService" transparent="1" zPosition="8" halign="center" foregroundColor="darkred" >
+		<convert type="iFlatMSNWeather2">Temp</convert>
+	</widget>
+<!-- Wetter */-->
+</screen>
+
+
+</skin>

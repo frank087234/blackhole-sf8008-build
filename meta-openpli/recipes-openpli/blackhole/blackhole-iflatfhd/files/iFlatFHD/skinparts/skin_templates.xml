@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+  <!-- Help Window Templates -->
+  <screen name="Help_Window">
+    	<widget alphatest="on" name="HelpWindow" position="1200,790" size="1,1" transparent="1" zPosition="1" />
+  </screen>
+  <!-- Button Text Templates -->
+  <screen name="ButtonTextRed">
+    <widget objectTypes="key_red,Label,Button" name="key_red" position="15,1037" size="280,36" foregroundColor="foreground3" backgroundColor="background2" zPosition="1" transparent="1" font="Regular;28" halign="center" />
+    <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="15,1037" size="280,36" foregroundColor="foreground3" backgroundColor="background2" zPosition="2" transparent="1" font="Regular;28" halign="center" />
+  </screen>
+  <screen name="ButtonTextGreen">
+    <widget objectTypes="key_green,Label,Button" name="key_green" position="310,1037" size="280,36" foregroundColor="foreground3" backgroundColor="background2" zPosition="1" transparent="1" font="Regular;28" halign="center" />
+    <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="310,1037" size="280,36" foregroundColor="foreground3" backgroundColor="background2" zPosition="2" transparent="1" font="Regular;28" halign="center" />
+  </screen>
+  <screen name="ButtonTextYellow">
+    <widget objectTypes="key_yellow,Label,Button" name="key_yellow" position="605,1037" size="280,36" foregroundColor="foreground3" backgroundColor="background2" zPosition="1" transparent="1" font="Regular;28" halign="center" />
+    <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="605,1037" size="280,36" foregroundColor="foreground3" backgroundColor="background2" zPosition="2" transparent="1" font="Regular;28" halign="center" />
+  </screen>
+  <screen name="ButtonTextBlue">
+    <widget objectTypes="key_blue,Label,Button" name="key_blue" position="900,1037" size="280,36" foregroundColor="foreground3" backgroundColor="background2" zPosition="1" transparent="1" font="Regular;28" halign="center" />
+    <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="900,1037" size="280,36" foregroundColor="foreground3" backgroundColor="background2" zPosition="2" transparent="1" font="Regular;28" halign="center" />
+  </screen>
+  <!-- Number Epg channel list -->
+  <screen name="NumberEpgchannellist">
+    <ePixmap position="1193,1036" size="30,30" pixmap="iFlatFHD/buttons/key_1.png" alphatest="blend" zPosition="4" />
+    <ePixmap position="1379,1036" size="30,30" pixmap="iFlatFHD/buttons/key_2.png" alphatest="blend" zPosition="4" />
+    <ePixmap position="1565,1036" size="30,30" pixmap="iFlatFHD/buttons/key_3.png" alphatest="blend" zPosition="4" />
+    <ePixmap position="1754,1036" size="30,30" pixmap="iFlatFHD/buttons/key_4.png" alphatest="blend" zPosition="4" />
+    <eLabel position="1224,1036" size="150,30" text="epg_search" font="Regular; 24" halign="center" valign="left" foregroundColor="foreground3" backgroundColor="background2" zPosition="1" />
+    <eLabel position="1409,1036" size="150,30" text="epg_single" font="Regular; 24" halign="center" valign="left" foregroundColor="foreground3" backgroundColor="background2" zPosition="1" />
+    <eLabel position="1599,1036" size="150,30" text="epg_multig" font="Regular; 24" halign="center" valign="left" foregroundColor="foreground3" backgroundColor="background2" zPosition="1" />
+    <eLabel position="1784,1036" size="150,30" text="last_search" font="Regular; 24" halign="center" valign="left" foregroundColor="foreground3" backgroundColor="background2" zPosition="1" />
+    <!--eLabel name="button menu" position="1613,1036" size="60,30" text="MENU" font="Regular; 17" halign="center" valign="center" foregroundColor="button_mfgc" backgroundColor="button_mbgc" zPosition="1" />
+    <eLabel name="button menu bg" position="1612,1035" size="62,32" backgroundColor="button_mbg" zPosition="0" />
+    <eLabel name="button epg" position="1689,1036" size="60,30" text="EPG" font="Regular; 17" halign="center" valign="center" foregroundColor="button_mfgc" backgroundColor="button_mbgc" zPosition="1" />
+    <eLabel name="button epg bg" position="1688,1035" size="62,32" backgroundColor="button_mbg" zPosition="0" />
+    <eLabel name="button lr" position="1766,1036" size="60,30" text="L / R" font="Regular; 17" halign="center" valign="center" foregroundColor="button_mfgc" backgroundColor="button_mbgc" zPosition="1" />
+    <eLabel name="button lire bg" position="1765,1035" size="62,32" backgroundColor="button_mbg" zPosition="0" />
+    <eLabel name="button ext" position="1843,1036" size="60,30" text="EXIT " font="Regular; 17" halign="center" valign="center" foregroundColor="button_mfgc" backgroundColor="button_mbgc" zPosition="1" />
+    <eLabel name="button exit bg" position="1842,1035" size="62,32" backgroundColor="button_mbg" zPosition="0" /-->
+  </screen>
+  <!-- Buttons Template -->
+  <screen name="ButtonTemplate">
+    <panel name="ButtonRed" />
+    <panel name="ButtonGreen" />
+    <panel name="ButtonYellow" />
+    <panel name="ButtonBlue" />
+  </screen>
+  <!-- Individual Button Templates -->
+  <screen name="ButtonRed">
+    <panel name="ButtonTextRed" />
+  </screen>
+  <screen name="ButtonGreen">
+    <panel name="ButtonTextGreen" />
+  </screen>
+  <screen name="ButtonYellow">
+    <panel name="ButtonTextYellow" />
+  </screen>
+  <screen name="ButtonBlue">
+    <panel name="ButtonTextBlue" />
+  </screen>
+  <screen name="p_topbar">
+    <eLabel name="DB" position="0,0" size="1920,57" backgroundColor="background2" zPosition="-10" />
+    <eLabel name="DB" position="0,57" size="1920,5" zPosition="-10" backgroundColor="background" />
+    <eLabel name="line_u" position="0,59" size="1920,1" zPosition="5" backgroundColor="line_u" />
+  </screen>
+  <screen name="p_bottombar">
+    <eLabel name="DB" position="0,1023" size="1920,57" backgroundColor="background2" zPosition="-10" />
+    <eLabel name="DB" position="0,1018" size="1920,5" zPosition="-10" backgroundColor="background" />
+    <eLabel name="line_d" position="0,1020" size="1920,1" zPosition="5" backgroundColor="line_d" />
+  </screen>
+  <screen name="p_centerbar1920">
+    <eLabel name="DB" position="-1,61" size="1920,956" zPosition="-10" backgroundColor="background" />
+  </screen>
+  <screen name="p_centerbar1300">
+    <eLabel name="DB" position="0,62" size="1300,956" zPosition="-10" backgroundColor="background" />
+  </screen>
+  <screen name="p_centerbar1200">
+    <eLabel name="DB" position="0,62" size="1200,956" zPosition="-10" backgroundColor="background" />
+  </screen>
+  <screen name="p_centerbar960">
+    <eLabel name="DB" position="0,62" size="960,956" zPosition="-10" backgroundColor="background" />
+  </screen>
+  <screen name="p_centerbar660">
+    <eLabel name="DB" position="0,62" size="660,956" zPosition="-10" backgroundColor="background" />
+  </screen>
+  <screen name="p_color_labels">
+    <eLabel name="button_red" position="15,1070" size="280,4" backgroundColor="button_red" zPosition="1" />
+    <eLabel name="button_green" position="310,1070" size="280,4" backgroundColor="button_green" zPosition="1" />
+    <eLabel name="button_yellow" position="605,1070" size="280,4" backgroundColor="button_yellow" zPosition="1" />
+    <eLabel name="button_blue" position="900,1070" size="280,4" backgroundColor="button_blue" zPosition="1" />
+  </screen>
+    <screen name="p_color_labels2">
+    <eLabel name="button_red" position="15,1070" size="280,4" backgroundColor="button_red" zPosition="1" />
+    <eLabel name="button_green" position="310,1070" size="280,4" backgroundColor="button_green" zPosition="1" />
+  </screen>
+  <!-- /* InfoBar widgets v3.6 -->
+  <screen name="IBTimeWidget">
+    <!-- /* DateTime -->
+    <widget source="global.CurrentTime" render="Label" position="1730,897" size="160,70" font="Regular; 52" halign="right" foregroundColor="foreground" backgroundColor="background" transparent="1">
+      <convert type="ClockToText">
+      </convert>
+    </widget>
+    <!-- DateTime */-->
+  </screen>
+  <screen name="IBRecWidget">
+    <widget source="session.RecordState" position="1884,886" render="FixedLabel" text=" " size="30,20" backgroundColor="icon_record" zPosition="4">
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
+  <screen name="IBUpdateWidget">
+  </screen>
+  <screen name="IBSeasonsWidget">
+  </screen>
+  <screen name="IBPosterWidget">
+  </screen>
+  <screen name="IBTunerWidget">
+  </screen>
+  <screen name="IBResolutionWidget">
+  </screen>
+  <screen name="IBSNRAGCWidget">
+  </screen>
+  <screen name="IBTempWidget">
+  </screen>
+  <screen name="IBIconsWidget">
+  </screen>
+  <screen name="IBNumberNameWidget">
+  </screen>
+  <screen name="IBWeatherWidget">
+  </screen>
+  <screen name="chs_horInfos">
+  </screen>
+  <screen name="IBTopBarWidget">
+  </screen>
+  <screen name="IBBoxTypeWidget">
+  </screen>
+  <screen name="IBEismanTopBarWidget">
+  </screen>
+  <screen name="IBCAMICONWidget">
+  </screen>
+  <screen name="IBTimeSEcondsWidget">
+  </screen>
+  <screen name="IBEismanTopBarWidget">
+  </screen>
+  <screen name="IBPERCTEVENWidget">
+  </screen>
+  <screen name="TemplateRrrowControl">
+    <widget name="rc" position="30,260" size="194,540" pixmap="iFlatFHD/buttons/rc.png" zPosition="10" alphatest="blend" />
+    <widget name="arrowdown" position="-100,-100" size="37,70" conditional="arrowdown" pixmap="arrowdown.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowup" position="-100,-100" size="37,70" conditional="arrowdown" pixmap="arrowup.png" zPosition="11" alphatest="blend" />
+    <widget name="arrowup2" position="-100,-100" size="37,70" conditional="arrowdown" pixmap="arrowup.png" zPosition="11" alphatest="blend" />
+  </screen>
+    <screen name="TemplateRemoteControl">
+	<!--
+	 |	For the key indicator pixmaps, "position" is used for
+	 |	the position of the pixmap "hotspot".
+	 |	The screen positions the pixmap relative to the
+	 |	hotspot, not the pixmap's top left corner
+	 +-->
+	<widget name="indicatorU0" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU1" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU2" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU3" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU4" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU5" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU6" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU7" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU8" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU9" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU10" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU11" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU12" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU13" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU14" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorU15" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL0" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL1" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL2" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL3" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL4" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL5" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL6" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL7" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL8" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL9" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL10" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL11" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL12" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL13" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL14" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+	<widget name="indicatorL15" pixmap="yellow_circle23x23.png" position="0,0" size="23,23" alphatest="blend" offset="11,11" zPosition="11" />
+  </screen>
+  <!-- MovieSelection widgets */ -->
+  <screen name="Cover_MovieSelectionn">
+	<ePixmap pixmap="iFlatFHD/icons/no-cover-6.png" position="1434,197" size="300,480" zPosition="2" backgroundColor="background" alphatest="blend" transparent="1" />
+	<widget source="Service" render="iFlatCover" position="1434,197" size="300,480" zPosition="3" backgroundColor="background" alphatest="blend" transparent="1" />
+  </screen>
+  <!-- MovieSelection widgets */ -->
+  <!-- InfoBar widgets v3.6 */ -->
+  <!-- /* ChannelSelection rechte Seite, Description -->
+  <screen name="chs_description">
+    <widget source="ServiceEvent" position="1255,0" size="95,57" render="Picon" transparent="1" alphatest="blend" zPosition="2">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="ServiceEvent" position="1255,75" size="650,48" render="iFlatRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=4000,always=0" font="Regular; 38" halign="left" valign="top" foregroundColor="foreground2" backgroundColor="background" transparent="1">
+      <convert type="EventName">Description</convert>
+    </widget>
+    <widget source="ServiceEvent" position="1255,130" size="650,852" render="iFlatRunningText" options="movetype=running,startpoint=0,direction=top,steptime=95,startdelay=8000,wrap,always=0" font="Regular; 32" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="ServiceEvent" position="1211,985" size="110,30" render="Label" font="Regular; 25" halign="right" backgroundColor="background" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText" />
+    </widget>
+    <widget source="ServiceEvent" position="1836,985" size="110,30" render="Label" font="Regular; 25" backgroundColor="background" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="ServiceEvent" position="1335,998" size="486,5" render="Progress" foregroundColor="progress" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel name="progress_bg" position="1335,1000" size="486,1" backgroundColor="progress_bg" />
+  </screen>
+  <!-- ChannelSelection rechte Seite, Description */ -->
+  <!-- /* DatumUhrzeit rechts oben -->
+  <screen name="dateclock">
+    <widget source="global.CurrentTime" render="Label" position="1400,19" size="320,37" font="Regular; 26" halign="right" valign="top" foregroundColor="foreground3" backgroundColor="background2" transparent="1">
+      <convert type="ClockToText">FullDate</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1700,4" size="160,50" font="Regular; 42" halign="right" foregroundColor="foreground3" backgroundColor="background2" transparent="1" valign="top">
+      <convert type="ClockToText">
+      </convert>
+    </widget>
+    <!--widget source="global.CurrentTime" render="Label" position="1867,9" size="50,40" font="Regular; 25" halign="left" valign="top" foregroundColor="foreground3" backgroundColor="background2" transparent="1">
+      <convert type="ClockToText">Format:%S</convert>
+    </widget-->
+  </screen>
+  <!-- DatumUhrzeit rechts oben */ -->
+  <!-- /* EPGSelection rechte Seite, Standard -->
+  <screen name="EPGselection_rechts">
+    <widget source="Service" render="Picon" position="1255,0" size="95,57" transparent="1" alphatest="blend" zPosition="2">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="Event" render="iFlatRunningText" position="1255,75" size="650,48" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=4000,always=0" font="Regular; 38" halign="left" valign="top" foregroundColor="foreground2" backgroundColor="background" transparent="1">
+      <convert type="EventName">Description</convert>
+    </widget>
+    <widget source="Event" render="iFlatRunningText" position="1255,130" size="650,852" options="movetype=running,startpoint=0,direction=top,steptime=95,startdelay=8000,wrap,always=0" font="Regular; 32" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="Event" render="Label" position="1211,985" size="110,30" font="Regular; 25" halign="right" backgroundColor="background" transparent="1" zPosition="2">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">
+      </convert>
+    </widget>
+    <widget source="Event" render="Label" position="1836,985" size="110,30" font="Regular; 25" halign="left" backgroundColor="background" transparent="1" zPosition="2">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">
+      </convert>
+    </widget>
+    <eLabel name="progress_bg" position="1335,1000" size="486,1" backgroundColor="progress_bg" />
+    <widget source="Event" render="Progress" position="1335,998" size="486,5" foregroundColor="progress" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+  </screen>
+  <!-- EPGSelection rechte Seite, Standard */ -->
+  <!-- widget to add channel name in vertical / column EPG , default : empty -->
+  <screen name="vEPG_channel_name">
+  </screen>
+  <!-- /* TimerEdit_rechts -->
+  <screen name="TimerEdit_rechts">
+    <widget source="ServiceEvent" position="1255,0" size="95,57" render="Picon" transparent="1" alphatest="blend" zPosition="2">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="Event" position="1255,75" size="650,48" render="iFlatRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=4000,always=0" font="Regular; 38" halign="left" foregroundColor="foreground2" backgroundColor="background" transparent="1">
+      <convert type="EventName">Description</convert>
+    </widget>
+    <widget source="Event" position="1255,130" size="650,852" render="iFlatRunningText" options="movetype=running,startpoint=0,direction=top,steptime=95,startdelay=8000,wrap,always=0" font="Regular; 32" halign="left" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1" zPosition="2">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="Event" position="1211,985" size="110,30" render="Label" font="Regular; 25" halign="right" backgroundColor="background" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText" />
+    </widget>
+    <widget source="Event" position="1836,984" size="110,30" render="Label" font="Regular; 25" backgroundColor="background" transparent="1">
+      <convert type="EventTime">EndTime</convert>
+      <convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <eLabel name="progress_bg" position="1335,1000" size="486,1" backgroundColor="progress_bg" />
+    <widget source="Event" position="1335,998" size="486,5" render="Progress" foregroundColor="progress" transparent="1" zPosition="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+  </screen>
+  <!-- Movielist backdrop dunkler Hintergrund -->
+  <screen name="show_backdrop">
+    <eLabel position="0,0" size="1920,1080" backgroundColor="background" zPosition="-11" />
+  </screen>
+  <!-- SecondInfoBar TunerInfo (9 Tuners) : with new iFlatFrontendInfo converter (v5.9) to show busy FBC Tuner and recordings in different colors v1.0 initial -->
+  <screen name="SIB_Tuner">
+    <!-- Tuner 1 -->
+    <widget source="session.TunerInfo" position="150,1040" size="24,24" render="FixedLabel" text="A" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="bsy_tuner" transparent="0" zPosition="2">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" position="150,1040" size="24,24" render="FixedLabel" text="A" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="cur_tuner" transparent="0" zPosition="3">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" position="150,1040" size="24,24" render="FixedLabel" text="A" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="act_tuner" transparent="0" zPosition="4">
+      <convert type="iFlatFrontendInfo">REC_0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- Tuner 2 -->
+    <widget source="session.TunerInfo" position="175,1040" size="24,24" render="FixedLabel" text="B" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="bsy_tuner" transparent="0" zPosition="2">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" position="175,1040" size="24,24" render="FixedLabel" text="B" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="cur_tuner" transparent="0" zPosition="3">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" position="175,1040" size="24,24" render="FixedLabel" text="B" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="act_tuner" transparent="0" zPosition="4">
+      <convert type="iFlatFrontendInfo">REC_1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- Tuner 3 -->
+    <widget source="session.TunerInfo" position="200,1040" size="24,24" render="FixedLabel" text="C" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="bsy_tuner" transparent="0" zPosition="2">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" position="200,1040" size="24,24" render="FixedLabel" text="C" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="cur_tuner" transparent="0" zPosition="3">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">2,2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" position="200,1040" size="24,24" render="FixedLabel" text="C" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="act_tuner" transparent="0" zPosition="4">
+      <convert type="iFlatFrontendInfo">REC_2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- Tuner 4 -->
+    <widget source="session.TunerInfo" position="225,1040" size="24,24" render="FixedLabel" text="D" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="bsy_tuner" transparent="0" zPosition="2">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" position="225,1040" size="24,24" render="FixedLabel" text="D" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="cur_tuner" transparent="0" zPosition="3">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">3,3</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" position="225,1040" size="24,24" render="FixedLabel" text="D" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="act_tuner" transparent="0" zPosition="4">
+      <convert type="iFlatFrontendInfo">REC_3</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- Tuner 5 -->
+    <widget source="session.TunerInfo" position="250,1040" size="24,24" render="FixedLabel" text="E" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="bsy_tuner" transparent="0" zPosition="2">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">16</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" position="250,1040" size="24,24" render="FixedLabel" text="E" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="cur_tuner" transparent="0" zPosition="3">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">4,4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" position="250,1040" size="24,24" render="FixedLabel" text="E" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="act_tuner" transparent="0" zPosition="4">
+      <convert type="iFlatFrontendInfo">REC_4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- Tuner 6 -->
+    <widget source="session.TunerInfo" position="275,1040" size="24,24" render="FixedLabel" text="F" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="bsy_tuner" transparent="0" zPosition="2">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">32</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" position="275,1040" size="24,24" render="FixedLabel" text="F" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="cur_tuner" transparent="0" zPosition="3">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">5,5</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" position="275,1040" size="24,24" render="FixedLabel" text="F" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="act_tuner" transparent="0" zPosition="4">
+      <convert type="iFlatFrontendInfo">REC_5</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- Tuner 7 -->
+    <widget source="session.TunerInfo" position="300,1040" size="24,24" render="FixedLabel" text="G" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="bsy_tuner" transparent="0" zPosition="2">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">64</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" position="300,1040" size="24,24" render="FixedLabel" text="G" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="cur_tuner" transparent="0" zPosition="3">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">6,6</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" position="300,1040" size="24,24" render="FixedLabel" text="G" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="act_tuner" transparent="0" zPosition="4">
+      <convert type="iFlatFrontendInfo">REC_6</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- Tuner 8 -->
+    <widget source="session.TunerInfo" position="325,1040" size="24,24" render="FixedLabel" text="H" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="bsy_tuner" transparent="0" zPosition="2">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">128</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" position="325,1040" size="24,24" render="FixedLabel" text="H" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="cur_tuner" transparent="0" zPosition="3">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">7,7</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" position="325,1040" size="24,24" render="FixedLabel" text="H" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="act_tuner" transparent="0" zPosition="4">
+      <convert type="iFlatFrontendInfo">REC_7</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- Tuner 9 -->
+    <widget source="session.TunerInfo" position="350,1040" size="24,24" render="FixedLabel" text="I" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="bsy_tuner" transparent="0" zPosition="2">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">256</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" position="350,1040" size="24,24" render="FixedLabel" text="I" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="cur_tuner" transparent="0" zPosition="3">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">8,8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" position="350,1040" size="24,24" render="FixedLabel" text="I" font="Regular;22" halign="center" valign="center" foregroundColor="black" backgroundColor="act_tuner" transparent="0" zPosition="4">
+      <convert type="iFlatFrontendInfo">REC_8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+  </screen>
+  <!-- /* Lines -->
+  <screen name="0_42_1920_1">
+    <eLabel name="line_s" position="0,42" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_59_1920_1">
+    <eLabel name="line_s" position="0,59" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_87_1920_1">
+    <eLabel name="line_s" position="0,87" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_100_1920_1">
+    <eLabel name="line_s" position="0,100" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_107_1920_1">
+    <eLabel name="line_s" position="0,107" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_120_1241_1">
+    <eLabel name="line_s" position="0,120" size="1241,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_145_960_1">
+    <eLabel name="line_s" position="0,145" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_145_1920_1">
+    <eLabel name="line_s" position="0,145" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_186_1920_1">
+    <eLabel name="line_s" position="0,186" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_233_1920_1">
+    <eLabel name="line_s" position="0,233" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_234_1200_1">
+    <eLabel name="line_s" position="0,234" size="1200,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_235_1920_1">
+    <eLabel name="line_s" position="0,235" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_244_1920_1">
+    <eLabel name="line_s" position="0,244" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_245_960_1">
+    <eLabel name="line_s" position="0,245" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_245_1920_1">
+    <eLabel name="line_s" position="0,245" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_250_960_1">
+    <eLabel name="line_s" position="0,250" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_250_1335_1">
+    <eLabel name="line_s" position="0,250" size="1335,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_269_660_1">
+    <eLabel name="line_s" position="0,269" size="660,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_279_1920_1">
+    <eLabel name="line_s" position="0,279" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_294_1920_1">
+    <eLabel name="line_s" position="0,294" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_314_1920_1">
+    <eLabel name="line_s" position="0,314" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_340_960_1">
+    <eLabel name="line_s" position="0,340" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_349_1920_1">
+    <eLabel name="line_s" position="0,349" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_365_1920_1">
+    <eLabel name="line_s" position="0,365" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_367_960_1">
+    <eLabel name="line_s" position="0,367" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_405_1920_1">
+    <eLabel name="line_s" position="0,405" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_444_1200_1">
+    <eLabel name="line_s" position="0,444" size="1200,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_445_960_1">
+    <eLabel name="line_s" position="0,445" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_465_960_1">
+    <eLabel name="line_s" position="0,465" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_540_960_1">
+    <eLabel name="line_s" position="0,540" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_540_1920_1">
+    <eLabel name="line_s" position="0,540" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_560_960_1">
+    <eLabel name="line_s" position="0,560" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_592_960_1">
+    <eLabel name="line_s" position="0,592" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_600_1920_1">
+    <eLabel name="line_s" position="0,600" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_629_1200_1">
+    <eLabel name="line_s" position="0,629" size="1200,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_690_960_1">
+    <eLabel name="line_s" position="0,690" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_690_1920_1">
+    <eLabel name="line_s" position="0,690" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_722_1920_1">
+    <eLabel name="line_s" position="0,722" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_725_960_1">
+    <eLabel name="line_s" position="0,725" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_778_1920_1">
+    <eLabel name="line_s" position="0,778" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_790_960_1">
+    <eLabel name="line_s" position="0,790" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_809_1920_1">
+    <eLabel name="line_s" position="0,809" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_812_1920_1">
+    <eLabel name="line_s" position="0,812" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_815_1920_1">
+    <eLabel name="line_s" position="0,815" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_820_1200_1">
+    <eLabel name="line_s" position="0,820" size="1200,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_829_1200_1">
+    <eLabel name="line_s" position="0,829" size="1200,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_831_1241_1">
+    <eLabel name="line_s" position="0,831" size="1241,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_836_1920_1">
+    <eLabel name="line_s" position="0,836" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_840_960_1">
+    <eLabel name="line_s" position="0,840" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_860_1920_1">
+    <eLabel name="line_s" position="0,860" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_860_960_1">
+    <eLabel name="line_s" position="0,860" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_867_1241_1">
+    <eLabel name="line_s" position="0,867" size="1241,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_872_1241_1">
+    <eLabel name="line_s" position="0,872" size="1241,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_875_660_1">
+    <eLabel name="line_s" position="0,875" size="660,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_877_1920_1">
+    <eLabel name="line_s" position="0,877" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_880_960_1">
+    <eLabel name="line_s" position="0,880" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_890_1200_1">
+    <eLabel name="line_s" position="0,890" size="1200,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_905_960_1">
+    <eLabel name="line_s" position="0,905" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_914_1241_1">
+    <eLabel name="line_s" position="0,914" size="1241,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_920_960_1">
+    <eLabel name="line_s" position="0,920" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_930_960_1">
+    <eLabel name="line_s" position="0,930" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_945_660_1">
+    <eLabel name="line_s" position="0,945" size="660,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_945_960_1">
+    <eLabel name="line_s" position="0,945" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_945_999_1">
+    <eLabel name="line_s" position="0,945" size="999,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_945_1200_1">
+    <eLabel name="line_s" position="0,945" size="1200,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_945_1300_1">
+    <eLabel name="line_s" position="0,945" size="1300,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_960_1920_1">
+    <eLabel name="line_s" position="0,960" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_964_1920_1">
+    <eLabel name="line_s" position="0,964" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_887_1300_1">
+    <eLabel name="line_s" position="0,887" size="1300,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_1020_1920_1">
+    <eLabel name="line_s" position="0,1020" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="20_22_640_1">
+    <eLabel name="line_s" position="20,22" size="640,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="20_220_640_1">
+    <eLabel name="line_s" position="20,220" size="640,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="30_115_900_1">
+    <eLabel name="line_s" position="30,115" size="900,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="30_145_900_1">
+    <eLabel name="line_s" position="30,145" size="900,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="30_165_1860_1">
+    <eLabel name="line_s" position="30,165" size="1860,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="30_645_1860_1">
+    <eLabel name="line_s" position="30,645" size="1860,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="30_935_900_1">
+    <eLabel name="line_s" position="30,935" size="900,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="295_446_1_573">
+    <eLabel name="line_s" position="295,446" size="1,573" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="343_24_1_195">
+    <eLabel name="line_s" position="343,24" size="1,195" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="510_60_1_753">
+    <eLabel name="line_s" position="510,60" size="1,753" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="590_446_1_573">
+    <eLabel name="line_s" position="590,446" size="1,573" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="610_959_1310_1">
+    <eLabel name="line_s" position="610,959" size="1310,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="646_247_1_352">
+    <eLabel name="line_s" position="646,247" size="1,352" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="885_446_1_382">
+    <eLabel name="line_s" position="885,446" size="1,382" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="960_61_1_628">
+    <eLabel name="line_s" position="960,61" size="1,628" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="960_61_1_958">
+    <eLabel name="line_s" position="960,61" size="1,958" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="960_156_1_863">
+    <eLabel name="line_s" position="960,156" size="1,863" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="960_235_1_600">
+    <eLabel name="line_s" position="960,235" size="1,600" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="986_115_900_1">
+    <eLabel name="line_s" position="986,115" size="900,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="990_145_900_1">
+    <eLabel name="line_s" position="990,145" size="900,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="990_935_900_1">
+    <eLabel name="line_s" position="990,935" size="900,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1000_61_1_958">
+    <eLabel name="line_s" position="1000,61" size="1,958" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1237_60_1_753">
+    <eLabel name="line_s" position="1237,60" size="1,753" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1242_61_1_718">
+    <eLabel name="line_s" position="1242,61" size="1,718" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1242_61_1_958">
+    <eLabel name="line_s" position="1242,61" size="1,958" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1275_247_1_352">
+    <eLabel name="line_s" position="1275,247" size="1,352" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1490_61_1_252">
+    <eLabel name="line_s" position="1490,61" size="1,252" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <!-- Lines */ -->
+  <!-- /* MediaPortal -->
+  <screen name="0_122_1920_1">
+    <eLabel name="line_s" position="0,122" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_187_1920_1">
+    <eLabel name="line_s" position="0,187" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_257_1920_1">
+    <eLabel name="line_s" position="0,257" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_562_1920_1">
+    <eLabel name="line_s" position="0,562" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_860_960_1">
+    <eLabel name="line_s" position="0,860" size="960,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="492_189_1_830">
+    <eLabel name="line_s" position="492,189" size="1,830" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="960_259_1_760">
+    <eLabel name="line_s" position="960,259" size="1,760" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="965_189_1_830">
+    <eLabel name="line_s" position="965,189" size="1,830" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1244_140_676_1">
+    <eLabel name="line_s" position="1244,140" size="676,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1244_520_676_1">
+    <eLabel name="line_s" position="1244,520" size="676,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1260_140_640_1">
+    <eLabel name="line_s" position="1260,140" size="640,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1260_520_640_1">
+    <eLabel name="line_s" position="1260,520" size="640,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1435_189_1_830">
+    <eLabel name="line_s" position="1435,189" size="1,830" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <!-- MediaPortal */ -->
+  <!-- /* Alternative SkinParts -->
+  <screen name="0_200_1241_1">
+    <eLabel name="line_s" position="0,200" size="1241,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_446_1200_1">
+    <eLabel name="line_s" position="0,446" size="1200,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="0_730_1200_1">
+    <eLabel name="line_s" position="0,730" size="1200,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="237_446_1_573">
+    <eLabel name="line_s" position="237,446" size="1,573" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="472_446_1_573">
+    <eLabel name="line_s" position="472,446" size="1,573" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="707_446_1_573">
+    <eLabel name="line_s" position="707,446" size="1,573" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="710_61_1_958">
+    <eLabel name="line_s" position="710,61" size="1,958" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="937_446_1_573">
+    <eLabel name="line_s" position="937,446" size="1,573" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1243_120_677_1">
+    <eLabel name="line_s" position="1243,120" size="677,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1243_750_677_1">
+    <eLabel name="line_s" position="1243,750" size="677,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1243_865_677_1">
+    <eLabel name="line_s" position="1243,865" size="677,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1330_61_1_958">
+    <eLabel name="line_s" position="1330,61" size="1,958" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1331_865_589_1">
+    <eLabel name="line_s" position="1331,865" size="589,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <!-- Alternative SkinParts */ -->
+  <!-- /* VerticalEPGView_FHD -->
+  <screen name="0_810_1920_1">
+    <eLabel name="line_s" position="0,810" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="394_61_1_749">
+    <eLabel name="line_s" position="394,61" size="1,749" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="769_61_1_749">
+    <eLabel name="line_s" position="769,61" size="1,749" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1145_61_1_749">
+    <eLabel name="line_s" position="1145,61" size="1,749" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1520_61_1_749">
+    <eLabel name="line_s" position="1520,61" size="1,749" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="30_150_342_1">
+    <eLabel name="line_s" position="30,150" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="30_260_342_1">
+    <eLabel name="line_s" position="30,260" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="30_370_342_1">
+    <eLabel name="line_s" position="30,370" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="30_480_342_1">
+    <eLabel name="line_s" position="30,480" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="30_590_342_1">
+    <eLabel name="line_s" position="30,590" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="30_700_342_1">
+    <eLabel name="line_s" position="30,700" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="405_150_342_1">
+    <eLabel name="line_s" position="405,150" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="405_260_342_1">
+    <eLabel name="line_s" position="405,260" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="405_370_342_1">
+    <eLabel name="line_s" position="405,370" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="405_480_342_1">
+    <eLabel name="line_s" position="405,480" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="405_590_342_1">
+    <eLabel name="line_s" position="405,590" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="405_700_342_1">
+    <eLabel name="line_s" position="405,700" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="780_150_342_1">
+    <eLabel name="line_s" position="780,150" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="780_260_342_1">
+    <eLabel name="line_s" position="780,260" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="780_370_342_1">
+    <eLabel name="line_s" position="780,370" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="780_480_342_1">
+    <eLabel name="line_s" position="780,480" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="780_590_342_1">
+    <eLabel name="line_s" position="780,590" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="780_700_342_1">
+    <eLabel name="line_s" position="780,700" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1155_150_342_1">
+    <eLabel name="line_s" position="1155,150" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1155_260_342_1">
+    <eLabel name="line_s" position="1155,260" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1155_370_342_1">
+    <eLabel name="line_s" position="1155,370" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1155_480_342_1">
+    <eLabel name="line_s" position="1155,480" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1155_590_342_1">
+    <eLabel name="line_s" position="1155,590" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1155_700_342_1">
+    <eLabel name="line_s" position="1155,700" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1530_150_342_1">
+    <eLabel name="line_s" position="1530,150" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1530_260_342_1">
+    <eLabel name="line_s" position="1530,260" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1530_370_342_1">
+    <eLabel name="line_s" position="1530,370" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1530_480_342_1">
+    <eLabel name="line_s" position="1530,480" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1530_590_342_1">
+    <eLabel name="line_s" position="1530,590" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <screen name="1530_700_342_1">
+    <eLabel name="line_s" position="1530,700" size="342,1" zPosition="5" backgroundColor="line_s" />
+  </screen>
+  <!-- VerticalEPGView_FHD */ -->
+  <!-- panel for the list in "menu*" screens, just to be able to adjust the list sizes = itemHeight + font size -->
+  <!-- here : default sizes including debug entry-->
+  <screen name="menu_list">
+    <widget source="menu" position="30,75" size="900,920" render="Listbox" foregroundColor="foreground" backgroundColor="background" transparent="1" enableWrapAround="1" scrollbarMode="showOnDemand" scrollbarWidth="3" scrollbarSliderForegroundColor="scrollbarsfgc" scrollbarSliderBorderColor="scrollbarsbgc" scrollbarSliderBorderWidth="0" scrollbarRadius="5"  itemCornerRadius="12" selectionZoom="4">
+      <convert type="TemplatedMultiContent">
+				{"templates":
+					{"default": (60,[
+						MultiContentEntryText(pos = (30, 0), size = (680, 60), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 0)
+						]),
+					"text": (60,[
+						MultiContentEntryText(pos = (30, 0), size = (680, 60), flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3)
+						]),
+					"number": (60,[
+						MultiContentEntryText(pos = (20, 0), size = (40, 60), font = 1, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 2),
+						MultiContentEntryText(pos = (80, 0), size = (680, 60), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
+						]),
+					"image": (60,[
+						MultiContentEntryPixmapAlphaBlend(pos = (25, 2), size = (56, 56), png = 1, flags = BT_SCALE | BT_KEEP_ASPECT_RATIO),
+						MultiContentEntryText(pos = (113, 0), size = (680, 60), font = 1, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
+						]),
+					"both": (60,[
+						MultiContentEntryPixmapAlphaBlend(pos = (25, 2), size = (56, 56), png = 1, flags = BT_SCALE | BT_KEEP_ASPECT_RATIO),
+						MultiContentEntryText(pos = (95, 0), size = (40, 60), font = 2, flags = RT_HALIGN_CENTER | RT_VALIGN_CENTER, text = 2),
+						MultiContentEntryText(pos = (150, 0), size = (680, 60), font = 2, flags = RT_HALIGN_LEFT | RT_VALIGN_CENTER, text = 3),
+						])
+					},
+				"fonts": [gFont("Regular", 38),gFont("Regular", 38),gFont("Regular", 38)],
+				"itemHeight": 65,
+				"scrollbarMode": "showOnDemand"
+				}
+    	</convert>
+    </widget>
+    <panel name="menuimageicon" />
+    <panel name="menu_list_debug" />
+  </screen>
+  <!-- dummy panel for debug entry -->
+  <screen name="menu_list_debug" />
+  <!-- panels for menu icons, has to be a separate panel per screen ... default = dummy panels = no icons -->
+  <!-- the name of the panel is simply "menuicon_<name_of_screen>" without the "menu_" -->
+  <screen name="menuicon_Menu" />
+  <screen name="menuicon_mainmenu" />
+  <screen name="menuicon_information" />
+  <screen name="menuicon_setup" />
+  <screen name="menuicon_scan" />
+  <screen name="menuicon_system" />
+  <screen name="menuicon_harddisk" />
+  <screen name="menuicon_shutdown" />
+  <screen name="menuicon_tasklist" />
+  <screen name="menuicon_VTIMainMenu" />
+  <screen name="menuicon_VTISubMenu" />
+  <screen name="menuicon_PluginBrowser" />
+  <screen name="menuicon_MyPluginManager" />
+  <screen name="menuicon_NetworkAdapterSelection" />
+  <screen name="menuicon_AdapterSetupConfiguration" />
+  <screen name="menuicon_setup_keyboard" />
+  <screen name="menuicon_VirtualKeyBoard" />
+  <screen name="menuicon_Console" />
+  <!-- IBEisman Screens -->
+  <screen name="IBTuneriFlatStyleWidget">
+    <panel name="IBTunerWidget" />
+  </screen>
+  <screen name="IBIconsEiFlatStyleWidget">
+    <panel name="IBResolutionWidget" />
+    <panel name="IBSNRAGCWidget" />
+    <panel name="IBTempWidget" />
+    <panel name="IBIconsWidget" />
+    <panel name="IBNumberNameWidget" />
+  </screen>
+  <screen name="IBEismanWeatherWidget">
+    <panel name="IBWeatherWidget" />
+  </screen>
+  <screen name="IBEismanBoxTypeWidgetWidget">
+    <panel name="IBBoxTypeWidget" />
+  </screen>
+  <screen name="IBTimeiFlatStyleWidget">
+    <panel name="IBTimeWidget" />
+  </screen>
+  <screen name="IBEismanScreen2_1Widget">
+  </screen>
+  <screen name="IBEismanIconsEWidget">
+  </screen>
+  <screen name="IBEismanPiconScreen2Widget">
+    <!-- /* SatInfo Start -->
+    <widget alphatest="blend" position="275,950" render="PiconUni" path="iFlatFHD/piconSat" size="100,60" source="session.CurrentService" transparent="1" zPosition="2">
+      <convert type="ServiceName2">OrbitalPos</convert>
+    </widget>
+    <widget alphatest="blend" position="275,887" render="PiconUni" path="iFlatFHD/piconProv" size="100,60" source="session.CurrentService" zPosition="2" transparent="1">
+      <convert type="ServiceName2">Provider</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/picon_dvb-c.png" position="275,950" size="100,60" zPosition="2" transparent="1" alphatest="blend">
+      <convert type="ServiceInfoEX">IsCable</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/picon_dvb-t.png" position="275,950" size="100,60" zPosition="2" transparent="1" alphatest="blend">
+      <convert type="ServiceInfoEX">IsTerrestrial</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/picon_IPTV.png" position="275,950" size="100,60" zPosition="2" transparent="1" alphatest="blend">
+      <convert type="ServiceInfoEX">IsStreamTV</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!-- SatInfo End */-->
+  </screen>
+  <screen name="IBEcmWidget">
+  <!-- Ecm -->
+<widget position="1494,1036" size="22,28" halign="center" text="B" font="Regular;26" foregroundColor="foreground3" backgroundColor="background2" name="beta_no" zPosition="3" transparent="1"/>
+<widget position="1494,1036" size="22,28" halign="center" text="B" font="Regular;26" backgroundColor="background2" foregroundColor="#e1ab06" name="beta_emm" zPosition="4" transparent="1"/>
+<widget position="1494,1036" size="22,28" halign="center" text="B" font="Regular;26" backgroundColor="background2" foregroundColor="#00a400" name="beta_ecm" zPosition="5" transparent="1"/>
+<widget position="1513,1036" size="22,28" halign="center" text="I" font="Regular;26" foregroundColor="foreground3" backgroundColor="background2" name="irdeto_no" zPosition="3" transparent="1"/>
+<widget position="1513,1036" size="22,28" halign="center" text="I" font="Regular;26" backgroundColor="background2" foregroundColor="#e1ab06" name="irdeto_emm" zPosition="4" transparent="1"/>
+<widget position="1513,1036" size="22,28" halign="center" text="I" font="Regular;26" backgroundColor="background2" foregroundColor="#00a400" name="irdeto_ecm" zPosition="5" transparent="1"/>
+<widget position="1531,1036" size="22,28" halign="center" text="S" font="Regular;26" foregroundColor="foreground3" backgroundColor="background2" name="seca_no"  zPosition="3" transparent="1"/>
+<widget position="1531,1036" size="22,28" halign="center" text="S" font="Regular;26" backgroundColor="background2" foregroundColor="#e1ab06" name="seca_emm" zPosition="4" transparent="1"/>
+<widget position="1531,1036" size="22,28" halign="center" text="S" font="Regular;26" backgroundColor="background2" foregroundColor="#00a400" name="seca_ecm" zPosition="5" transparent="1"/>
+<widget position="1553,1036" size="22,28" halign="center" text="V" font="Regular;26" foregroundColor="foreground3" backgroundColor="background2" name="via_no"  zPosition="3" transparent="1"/>
+<widget position="1553,1036" size="22,28" halign="center" text="V" font="Regular;26" backgroundColor="background2" foregroundColor="#e1ab06" name="via_emm" zPosition="4" transparent="1"/>
+<widget position="1553,1036" size="22,28" halign="center" text="V" font="Regular;26" backgroundColor="background2" foregroundColor="#00a400" name="via_ecm" zPosition="5" transparent="1"/>
+<widget position="1578,1036" size="22,28" halign="center" text="N" font="Regular;26" foregroundColor="foreground3" backgroundColor="background2" name="nagra_no" zPosition="3" transparent="1"/>
+<widget position="1578,1036" size="22,28" halign="center" text="N" font="Regular;26" backgroundColor="background2" foregroundColor="#e1ab06" name="nagra_emm" zPosition="4" transparent="1"/>
+<widget position="1578,1036" size="22,28" halign="center" text="N" font="Regular;26" backgroundColor="background2" foregroundColor="#00a400" name="nagra_ecm" zPosition="5" transparent="1"/>
+<widget position="1599,1036" size="50,28" halign="center" text="CW" font="Regular;26" foregroundColor="foreground3" backgroundColor="background2" name="cw_no"  zPosition="3" transparent="1"/>
+<widget position="1599,1036" size="50,28" halign="center" text="CW" font="Regular;26" backgroundColor="background2" foregroundColor="#e1ab06" name="cw_emm" zPosition="4" transparent="1"/>
+<widget position="1599,1036" size="50,28" halign="center" text="CW" font="Regular;26" backgroundColor="background2" foregroundColor="#00a400" name="cw_ecm" zPosition="5" transparent="1"/>
+<widget position="1644,1036" size="50,28" halign="center" text="ND" font="Regular;26" foregroundColor="foreground3" backgroundColor="background2" name="nds_no"  zPosition="3" transparent="1"/>
+<widget position="1644,1036" size="50,28" halign="center" text="ND" font="Regular;26" backgroundColor="background2" foregroundColor="#e1ab06" name="nds_emm" zPosition="4" transparent="1"/>
+<widget position="1644,1036" size="50,28" halign="center" text="ND" font="Regular;26" backgroundColor="background2" foregroundColor="#00a400" name="nds_ecm" zPosition="5" transparent="1"/>
+<widget position="1687,1036" size="50,28" halign="center" text="CO" font="Regular;26" foregroundColor="foreground3" backgroundColor="background2" name="conax_no"  zPosition="3" transparent="1"/>
+<widget position="1687,1036" size="50,28" halign="center" text="CO" font="Regular;26" backgroundColor="background2" foregroundColor="#e1ab06" name="conax_emm" zPosition="4" transparent="1"/>
+<widget position="1687,1036" size="50,28" halign="center" text="CO" font="Regular;26" backgroundColor="background2" foregroundColor="#00a400" name="conax_ecm" zPosition="5" transparent="1"/>
+<widget position="1729,1036" size="50,28" halign="center" text="DC" font="Regular;26" foregroundColor="foreground3" backgroundColor="background2" name="dre_no"  zPosition="3" transparent="1"/>
+<widget position="1729,1036" size="50,28" halign="center" text="DC" font="Regular;26" backgroundColor="background2" foregroundColor="#e1ab06" name="dre_emm" zPosition="4" transparent="1"/>
+<widget position="1729,1036" size="50,28" halign="center" text="DC" font="Regular;26" backgroundColor="background2" foregroundColor="#00a400" name="dre_ecm" zPosition="5" transparent="1"/>
+<widget position="1770,1036" size="50,28" halign="center" text="BU" font="Regular;26" foregroundColor="foreground3" backgroundColor="background2" name="bul_no"  zPosition="3" transparent="1"/>
+<widget position="1770,1036" size="50,28" halign="center" text="BU" font="Regular;26" backgroundColor="background2" foregroundColor="#e1ab06" name="bul_emm" zPosition="4" transparent="1"/>
+<widget position="1770,1036" size="50,28" halign="center" text="BU" font="Regular;26" backgroundColor="background2" foregroundColor="#00a400" name="bul_ecm" valign="center" zPosition="5" transparent="1"/>
+<widget position="0,0" size="0,0" halign="center" text="PV" font="Regular;28" backgroundColor="background2" name="pv_no" zPosition="10" />
+<widget position="1830,1032" size="67,30" halign="center" text="PV" font="Regular;28" backgroundColor="background2" foregroundColor="#e1ab06" name="pv_emm" zPosition="11" />
+<widget position="1830,1032" size="67,30" halign="center" text="PV" font="Regular;28" backgroundColor="background2" foregroundColor="#00a400" name="pv_ecm" zPosition="12" />
+<widget position="0,0" size="0,0" halign="center" text="BISS" font="Regular;28" backgroundColor="background2" name="biss_no" zPosition="7" />
+<widget position="1830,1032" size="67,30" halign="center" text="BISS" font="Regular;28" backgroundColor="background2" foregroundColor="#e1ab06" name="biss_emm" zPosition="8" />
+<widget position="1830,1032" size="67,30" halign="center" text="BISS" font="Regular;28" backgroundColor="background2" foregroundColor="#00a400" name="biss_ecm" zPosition="9" />
+<widget name="button_fta" text="FTA" foregroundColor="foreground3" backgroundColor="background2" transparent="1" position="1830,1032" size="67,30" halign="center" font="Regular;28" zPosition="3"/>
+<widget name="button_card" text="CRD" backgroundColor="background2" transparent="1" position="1830,1032" size="67,30" halign="center" font="Regular;28" foregroundColor="#e1ab06" zPosition="4"/>
+<widget name="button_emu" text="EMU" backgroundColor="background2" transparent="1" position="1830,1032" size="67,30" halign="center" font="Regular;28" foregroundColor="green" zPosition="5"/>
+<widget name="button_spider" text="NET" backgroundColor="background2" transparent="1" position="1830,1032" size="67,30" halign="center" font="Regular;28" foregroundColor="#00a400" zPosition="6"/>
+<widget name="button_cex" text="CEX" backgroundColor="background2" transparent="1" position="1830,1032" size="67,30" halign="center" font="Regular;28" foregroundColor="yellow" zPosition="7"/>
+<!-- Ecm -->
+  </screen>
+</skin>

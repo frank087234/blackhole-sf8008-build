@@ -1,0 +1,20 @@
+<skin>
+  <screen name="IBSNRAGCWidget">
+	<!-- /* SNR_AGC_VERTICAL -->
+    <eLabel backgroundColor="background2" foregroundColor="foreground3" font="Regular; 27" halign="center" position="365,1038" size="10,30" text="-" transparent="1" zPosition="1" />
+    <eLabel backgroundColor="background" font="Regular; 27" halign="center" position="365,975" size="10,30" text="-" transparent="1" zPosition="1" />
+    <eLabel position="1787,985" size="70,30" text="SNR" zPosition="1" font="Regular; 20" transparent="1" backgroundColor="background" halign="center" valign="center" />
+    <eLabel position="1847,985" size="70,30" text="AGC" zPosition="1" font="Regular; 20" transparent="1" backgroundColor="background" halign="center" valign="center" />
+    <widget source="session.FrontendStatus" render="Progress" zPosition="3" position="1815,885" size="10,95" orientation="orBottomToTop" foregroundColor="prgrs" transparent="1" backgroundColor="background" valign="bottom" borderWidth="1" borderColor="CoolBar">
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Progress" zPosition="1" position="1874,885" size="10,95" orientation="orBottomToTop" foregroundColor="prgrs" transparent="1" backgroundColor="background" valign="bottom" borderWidth="1" borderColor="CoolBar">
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="FixedLabel" text="!" font="Console; 40" zPosition="11" position="1836,907" size="30,50" halign="center" alphatest="on" backgroundColor="transparent" valign="center" transparent="1" foregroundColor="red">
+      <convert type="FrontendInfo">BER</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>  
+	<!-- SNR_AGC_VERTICAL */--> 
+  </screen>
+</skin>

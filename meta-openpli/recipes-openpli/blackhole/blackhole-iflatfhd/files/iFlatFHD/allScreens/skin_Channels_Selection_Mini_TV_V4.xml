@@ -1,0 +1,46 @@
+﻿<skin>
+
+<screen name="ChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" flags="wfNoBorder">
+    <panel name="dateclock" />
+    <panel name="NumberEpgchannellist" />
+    <panel name="p_topbar" />
+    <panel name="p_bottombar" />
+    <panel name="p_centerbar1920" />
+    <panel name="p_color_labels" />
+    <eLabel name="line_s" position="690,914" size="1241,1" zPosition="5" backgroundColor="line_s" />
+    <eLabel name="line_s" position="690,61" size="1,958" zPosition="5" backgroundColor="line_s" />
+    <widget source="session.VideoPicture" render="Pig" position="20,75" size="650,370" backgroundColor="transparent" zPosition="10" />
+    <widget source="ServiceEvent" position="1255,0" size="95,57" render="Picon" transparent="1" alphatest="on" zPosition="2">
+		<convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="ServiceEvent" position="20,450" size="650,48" render="iFlatRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=5,startdelay=4000,always=0" font="Regular; 38" halign="left" valign="top" foregroundColor="foreground2" backgroundColor="background" transparent="1">
+		<convert type="EventName">Description</convert>
+    </widget>
+    <widget source="ServiceEvent" position="20,505" size="650,470" render="iFlatRunningText" options="movetype=running,startpoint=0,direction=top,steptime=95,startdelay=8000,wrap,always=0" font="Regular; 32" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1">
+		<convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="ServiceEvent" position="5,985" size="100,30" render="Label" font="Regular; 25" halign="center" backgroundColor="background" transparent="1">
+		<convert type="EventTime">StartTime</convert>
+		<convert type="ClockToText" />
+    </widget>
+    <widget source="ServiceEvent" position="601,985" size="100,30" render="Label" font="Regular; 25" backgroundColor="background" transparent="1">
+		<convert type="EventTime">EndTime</convert>
+		<convert type="ClockToText">Format:%H:%M</convert>
+    </widget>
+    <widget source="ServiceEvent" position="105,997" size="486,5" render="Progress" foregroundColor="progress" transparent="1" zPosition="1">
+		<convert type="EventTime">Progress</convert>
+    </widget>
+    <eLabel name="progress_bg" position="105,999" size="486,1" backgroundColor="progress_bg" />
+    <widget source="Title" position="15,6" size="1220,50" render="iFlatFavName" font="Regular; 42" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+    <widget name="list" position="700,75" size="1218,819" foregroundColor="foreground" backgroundColor="background" transparent="1" colorServiceWithAdvertisment="chs_advertise" colorServiceDescription="chs_desc" colorServiceDescriptionSelected="chs_desc_sel" foregroundColorSelected="chs_fg_sel" foregroundColorServiceNotAvail="chs_notavail" colorServiceRecording="chs_record" progressbarHeight="20" progressBarWidth="78" colorEventProgressbar="chs_progress" colorEventProgressbarSelected="chs_progress_sel" colorEventProgressbarBorder="chs_progressbd" colorEventProgressbarBorderSelected="chs_progressbd_sel" serviceItemHeight="48" serviceNumberFont="Regular;33" serviceNameFont="Regular;33" serviceInfoFont="Regular;33" scrollbarMode="showOnDemand" scrollbarWidth="3" scrollbarSliderForegroundColor="scrollbarsfgc" scrollbarSliderBorderColor="scrollbarsbgc" scrollbarSliderBorderWidth="0" valign="top" />
+    <eLabel position="685,922" size="100,35" text="NEXT" font="Regular; 25" halign="center" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+    <eLabel position="787,922" size="10,35" text=":" font="Regular; 25" halign="center" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1" />
+    <widget source="ServiceEvent" position="805,922" size="1110,87" render="NextEvents" font="Regular;28" valign="top" noWrap="1" foregroundColor="chs_desc" backgroundColor="background" transparent="1">
+		<convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget name="key_red" position="15,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+    <widget name="key_green" position="310,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+    <widget name="key_yellow" position="605,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+    <widget name="key_blue" position="900,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+</screen>
+</skin>

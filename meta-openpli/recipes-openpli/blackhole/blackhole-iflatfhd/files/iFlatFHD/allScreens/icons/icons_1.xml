@@ -1,0 +1,6 @@
+<skin>
+	<switchpixmap>
+		<pixmap name="menu_on" filename="iFlatFHD/icons/menu_icons/menu_on_1.png" />
+		<pixmap name="menu_off" filename="iFlatFHD/icons/menu_icons/menu_off_1.png" />
+	</switchpixmap>
+</skin>

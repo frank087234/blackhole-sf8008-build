@@ -1,0 +1,21 @@
+﻿<skin>
+
+<screen name="ChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
+  <panel name="dateclock" />
+  <panel name="chs_description" />
+  <panel name="p_topbar" />
+  <panel name="p_bottombar" />
+  <panel name="p_centerbar1920" />
+  <panel name="p_color_labels" />
+  <!--panel name="0_914_1241_1" /-->
+  <panel name="1242_61_1_958" />
+  <panel name="NumberEpgchannellist" />
+  <widget source="Title" position="15,6" size="1220,50" render="iFlatFavName" font="Regular; 42" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="list" position="30,78" size="1215,918" foregroundColor="foreground" backgroundColor="background" transparent="1" colorServiceWithAdvertisment="chs_advertise" colorServiceDescription="chs_desc" colorServiceDescriptionSelected="chs_desc_sel" foregroundColorSelected="chs_fg_sel" foregroundColorServiceNotAvail="chs_notavail" colorServiceRecording="chs_record" progressbarHeight="13" progressBarWidth="78" colorEventProgressbar="chs_progress" colorEventProgressbarSelected="chs_progress_sel" colorEventProgressbarBorder="chs_progressbd" colorEventProgressbarBorderSelected="chs_progressbd_sel" serviceItemHeight="48" serviceNumberFont="Regular;36" serviceNameFont="Regular;36" serviceInfoFont="Regular;36" scrollbarMode="showOnDemand" scrollbarWidth="3" scrollbarSliderForegroundColor="scrollbarsfgc" scrollbarSliderBorderColor="scrollbarsbgc" scrollbarSliderBorderWidth="0" valign="top" />
+  <widget name="key_red" position="15,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="key_green" position="310,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="key_yellow" position="605,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="key_blue" position="900,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+</screen>
+
+</skin>

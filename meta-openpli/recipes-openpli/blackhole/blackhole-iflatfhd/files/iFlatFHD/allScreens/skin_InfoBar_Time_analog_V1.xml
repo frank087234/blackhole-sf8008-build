@@ -1,0 +1,21 @@
+<skin>
+
+
+    <screen name="IBTimeWidget2">
+
+      <!-- /* Analog Time -->
+    <eLabel name="" text="ǩ" font="symbol; 95" position="1775,907" size="90,90" backgroundColor="background" zPosition="1" halign="center" transparent="1" foregroundColor="foreground" valign="center" />
+    <widget source="global.CurrentTime" render="Bhclock" position="1788,919" size="65,65" zPosition="4" borderColor="button_red" transparent="1" alphatest="on">
+      <convert type="BhAnalogic">Seconds</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Bhclock" position="1783,914" size="75,75" foregroundColor="foreground3" zPosition="3" transparent="1" alphatest="on">
+      <convert type="BhAnalogic">Minutes</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Bhclock" position="1801,931" size="40,40" foregroundColor="foreground3" zPosition="2" transparent="1" alphatest="on">
+      <convert type="BhAnalogic">Hours</convert>
+    </widget>
+      <!-- Analog Time */-->
+
+    </screen>
+
+</skin>

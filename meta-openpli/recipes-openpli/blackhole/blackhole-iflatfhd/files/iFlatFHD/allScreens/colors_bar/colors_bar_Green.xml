@@ -1,0 +1,11 @@
+<skin>
+
+  <colors>
+    <color name="progress" value="#0031a500" /> <!-- progressbar -->
+    <color name="chs_desc" value="#0031a500" /> <!-- colorServiceDescription -->
+    <color name="chs_progress" value="#0031a500" /> <!-- colorEventProgressbar -->
+    <color name="chs_progressbd" value="#0031a500" /> <!-- colorEventProgressbarBorder -->
+    <color name="scrollbarsfgc" value="#0031a500" /> <!-- scrollbarSliderForegroundColor -->
+  </colors>
+ 
+</skin>

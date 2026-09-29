@@ -1,0 +1,49 @@
+﻿<skin>
+
+<screen name="ChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" backgroundColor="transparent" flags="wfNoBorder">
+  <panel name="dateclock" />
+  <panel name="p_topbar" />
+  <panel name="p_bottombar" />
+  <panel name="p_centerbar1920" />
+  <panel name="p_color_labels" />
+  <panel name="NumberEpgchannellist" />
+  <!-- Event_Now Poster + stars + infoEvent + parentalEvent -->
+  <ePixmap pixmap="iFlatFHD/icons/extra-s.png" position="880,610" size="185,272" zPosition="4" alphatest="blend" />
+  <ePixmap pixmap="iFlatFHD/icons/extra.png" position="1080,610" size="185,272" zPosition="4" alphatest="blend" />
+  <ePixmap pixmap="iFlatFHD/icons/extra.png" position="1280,610" size="185,272" zPosition="4" alphatest="blend" />
+  <ePixmap pixmap="iFlatFHD/icons/extra.png" position="1480,610" size="185,272" zPosition="4" alphatest="blend" />
+  <ePixmap pixmap="iFlatFHD/icons/extra.png" position="1680,610" size="185,272" zPosition="4" alphatest="blend" />
+
+  <widget source="ServiceEvent" render="xtraNextEvents" nextEvent="0" usedImage="poster" delayPic="0" position="880,610" size="185,272" zPosition="5" alphatest="on" borderWidth="1" borderColor="blue" />
+  <widget source="ServiceEvent" render="xtraNextEvents" nextEvent="1" usedImage="poster" delayPic="0" position="1080,610" size="185,272" zPosition="5" alphatest="on" borderWidth="1" borderColor="white" />
+  <widget source="ServiceEvent" render="xtraNextEvents" nextEvent="2" usedImage="poster" delayPic="0" position="1280,610" size="185,272" zPosition="5" alphatest="on" borderWidth="1" borderColor="white" />
+  <widget source="ServiceEvent" render="xtraNextEvents" nextEvent="3" usedImage="poster" delayPic="0" position="1480,610" size="185,272" zPosition="5" alphatest="on" borderWidth="1" borderColor="white" />
+  <widget source="ServiceEvent" render="xtraNextEvents" nextEvent="4" usedImage="poster" delayPic="0" position="1680,610" size="185,272" zPosition="5" alphatest="on" borderWidth="1" borderColor="white" />
+
+  <widget source="ServiceEvent" render="xtraNxtEvnt" nxtEvents="" snglEvent="0" font="Regular;22" position="880,890" size="185,100" zPosition="5" backgroundColor="bgbutton2" transparent="1" />
+  <widget source="ServiceEvent" render="xtraNxtEvnt" nxtEvents="" snglEvent="1" font="Regular;22" position="1080,890" size="185,100" zPosition="5" backgroundColor="bgbutton2" transparent="1" />
+  <widget source="ServiceEvent" render="xtraNxtEvnt" nxtEvents="" snglEvent="2" font="Regular;22" position="1280,890" size="185,100" zPosition="5" backgroundColor="bgbutton2" transparent="1" />
+  <widget source="ServiceEvent" render="xtraNxtEvnt" nxtEvents="" snglEvent="3" font="Regular;22" position="1480,890" size="185,100" zPosition="5" backgroundColor="bgbutton2" transparent="1" />
+  <widget source="ServiceEvent" render="xtraNxtEvnt" nxtEvents="" snglEvent="4" font="Regular;22" position="1680,890" size="185,100" zPosition="5" backgroundColor="bgbutton2" transparent="1" />
+
+  <!--ePixmap pixmap="iFlatFHD/icons/stars/star_b.png" position="1705,645" size="200,20" alphatest="on" zPosition="2" transparent="1" />  
+  <widget render="iFlatstarsEvent2" source="ServiceEvent" pixmap="iFlatFHD/icons/stars/star.png" position="1705,645" size="200,20" alphatest="on" transparent="1" zPosition="3" />
+  <widget source="ServiceEvent" backgroundColor="background2" render="xtraPoster" position="1705,677" size="200,300"  zPosition="2"/>
+  <widget render="iFlatinfoEvent" source="ServiceEvent" position="0,0" size="0,0" font="Regular; 0" halign="left" valign="center" zPosition="1" foregroundColor="violet" backgroundColor="background" transparent="1" />
+  <widget render="iFlatparentalEvent" source="ServiceEvent" position="0,0" size="0,0" alphatest="on" zPosition="2" transparent="1" /-->
+  <!-- Event_Now Poster + stars + infoEvent + parentalEvent -->
+  <widget source="Title" position="15,6" size="1220,50" render="iFlatFavName" font="Regular; 42" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="list" position="30,78" size="830,918" foregroundColor="foreground" backgroundColor="background" transparent="1" colorServiceWithAdvertisment="chs_advertise" colorServiceDescription="chs_desc" colorServiceDescriptionSelected="chs_desc_sel" foregroundColorSelected="chs_fg_sel" foregroundColorServiceNotAvail="chs_notavail" colorServiceRecording="chs_record" progressbarHeight="13" progressBarWidth="78" colorEventProgressbar="chs_progress" colorEventProgressbarSelected="chs_progress_sel" colorEventProgressbarBorder="chs_progressbd" colorEventProgressbarBorderSelected="chs_progressbd_sel" serviceItemHeight="48" serviceNumberFont="Regular;36" serviceNameFont="Regular;36" serviceInfoFont="Regular;36" scrollbarMode="showOnDemand" scrollbarWidth="3" scrollbarSliderForegroundColor="scrollbarsfgc" scrollbarSliderBorderColor="scrollbarsbgc" scrollbarSliderBorderWidth="0" valign="top" />
+  <widget source="ServiceEvent" position="879,75" size="1000,48" render="iFlatRunningText" options="movetype=running,startpoint=0,direction=left,steptime=95,startdelay=4000,wrap,always=0" font="Regular; 36" halign="left" valign="top" foregroundColor="foreground2" backgroundColor="background" transparent="1">
+      <convert type="EventName">Description</convert>
+    </widget>
+    <widget source="ServiceEvent" position="879,130" size="1000,437" render="iFlatRunningText" options="movetype=running,startpoint=0,direction=top,steptime=95,startdelay=8000,wrap,always=0" font="Regular; 32" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+  <widget name="key_red" position="15,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="key_green" position="310,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="key_yellow" position="605,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="key_blue" position="900,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+</screen>
+
+</skin>

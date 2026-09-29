@@ -1,0 +1,13 @@
+﻿<skin>
+
+
+	<screen name="IBSeasonsWidget">
+
+<!-- /* Halloween -->
+  <ePixmap alphatest="on" pixmap="iFlatFHD/icons/pictures/halloween.png" position="1740,692" size="150,150" transparent="0" />
+<!-- Halloween */-->
+
+	</screen>
+
+
+</skin>

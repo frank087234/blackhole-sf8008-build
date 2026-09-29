@@ -1,0 +1,17 @@
+<skin>
+
+
+
+		<screen name="IBNumberNameWidget">
+
+			<!-- /* Number+Name -->
+			<widget source="session.CurrentService" render="ChannelNumber" position="0,745" size="320,130" font="Regular; 100" halign="center" valign="top" noWrap="1" foregroundColor="PreTrans" transparent="1" zPosition="-11"/>
+			<widget source="session.CurrentService" render="Label" position="317,745" size="1595,130" font="Regular; 100" halign="left" valign="top" noWrap="1" foregroundColor="PreTrans" transparent="1" zPosition="-11">
+				<convert type="ServiceName">Name</convert>
+			</widget>
+			<!-- Number+Name */-->
+
+		</screen>
+
+
+</skin>

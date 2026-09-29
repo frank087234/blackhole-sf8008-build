@@ -1,0 +1,16 @@
+<skin>
+
+<screen name="EventView" position="0,0" size="1920,1080" backgroundColor="transparent" flags="wfNoBorder" title="EventView">
+    <eLabel name="" position="0,975" size="1920,60" backgroundColor="background" zPosition="-1" />
+    <eLabel name="" text="Ā" font="symbol; 40" position="15,931" size="40,40" backgroundColor="background" zPosition="1" halign="center" transparent="1" valign="top" />
+    <widget font="Console; 35" name="channel" position="75,930" size="900,40" transparent="1" valign="center" zPosition="1" halign="left" />
+    <widget source="Event" render="iFlatRunningText" options="movetype=running,startdelay=3000,step=7,steptime=60,direction=left,startpoint=0,wrap=1,always=1" position="0,975" size="1890,56" transparent="0" font="Regular; 44" halign="left" valign="center" backgroundColor="background2" foregroundColor="foreground3" zPosition="5">
+      <convert type="EventName">ExtendedDescription</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="1595,930" size="305,40" transparent="1" zPosition="1" font="Console; 32" halign="right">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+</screen>
+
+</skin>

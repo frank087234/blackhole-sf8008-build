@@ -1,0 +1,46 @@
+﻿<skin>
+
+<screen name="ChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" flags="wfNoBorder">
+    <panel name="dateclock" />
+    <panel name="NumberEpgchannellist" />
+    <panel name="p_topbar" />
+    <panel name="p_bottombar" />
+    <panel name="p_color_labels" />
+  <widget source="session.VideoPicture" render="Pig" position="1135,73" size="750,336" backgroundColor="transparent" zPosition="10"/>
+  <widget source="ServiceEvent" position="20,913" size="200,100" render="Picon" zPosition="2" transparent="1" alphatest="on">
+    <convert type="ServiceName2">Reference</convert>
+  </widget>
+  <widget source="Title" position="15,6" size="1220,50" render="iFlatFavName" font="Regular; 42" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="list" position="20,75" size="1083,820" foregroundColor="foreground" backgroundColor="background" transparent="1" colorServiceWithAdvertisment="chs_advertise" colorServiceDescription="chs_desc" colorServiceDescriptionSelected="chs_desc_sel" foregroundColorSelected="chs_fg_sel" foregroundColorServiceNotAvail="chs_notavail" colorServiceRecording="chs_record" progressbarHeight="20" progressBarWidth="78" colorEventProgressbar="chs_progress" colorEventProgressbarSelected="chs_progress_sel" colorEventProgressbarBorder="chs_progressbd" colorEventProgressbarBorderSelected="chs_progressbd_sel" serviceItemHeight="48" serviceNumberFont="Regular;33" serviceNameFont="Regular;33" serviceInfoFont="Regular;33" scrollbarMode="showOnDemand" scrollbarWidth="3" scrollbarSliderForegroundColor="scrollbarsfgc" scrollbarSliderBorderColor="scrollbarsbgc" scrollbarSliderBorderWidth="0"/>
+  <widget name="key_red" position="15,1037" size="280,36" font="Regular;28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1"/>
+  <widget name="key_green" position="310,1037" size="280,36" font="Regular;28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1"/>
+  <widget name="key_yellow" position="605,1037" size="280,36" font="Regular;28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1"/>
+  <widget name="key_blue" position="900,1037" size="280,36" font="Regular;28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1"/>
+  <eLabel name="button exit bg" position="1842,1035" size="62,32" backgroundColor="button_mbg"/>
+  <widget source="ServiceEvent" render="Label" position="231,971" zPosition="1" size="850,30" font="Regular;28" halign="left" backgroundColor="background" transparent="1" foregroundColor="button_blue">
+    <convert type="ServiceName2">%P/ %s / %O / %F %p %Y %f %M</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="231,928" size="850,30" backgroundColor="background" font="Regular;28" halign="left" noWrap="1" transparent="1" zPosition="1" foregroundColor="button_blue">
+    <convert type="ServiceName2">%R</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" size="750,40" position="1135,425" zPosition="2" halign="center" font="Regular;28" foregroundColor="button_blue" backgroundColor="background" transparent="1" noWrap="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="1115,490" size="780,90" zPosition="1" font="Regular;26" foregroundColor="foreground" backgroundColor="background">
+    <convert type="EventName2">FullDescription</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" size="750,40" position="1135,600" zPosition="2" halign="center" font="Regular;28" foregroundColor="button_blue" backgroundColor="background" noWrap="1">
+    <convert type="EventName2">NextName</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="1115,650" size="780,90" zPosition="1" font="Regular;26" foregroundColor="foreground" backgroundColor="background">
+    <convert type="EventName2">NextDescription</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" size="750,80" position="1135,740" zPosition="2" halign="center" font="Regular;28" foregroundColor="button_blue" backgroundColor="background" noWrap="1">
+    <convert type="EventName2">NextNameNext</convert>
+  </widget>
+  <widget source="ServiceEvent" render="Label" position="1115,800" size="780,200" zPosition="3" font="Regular;26" foregroundColor="foreground" backgroundColor="background">
+    <convert type="EventName">ThirdDescription</convert>
+  </widget>
+</screen>
+ 
+</skin>

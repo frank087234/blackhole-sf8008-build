@@ -1,0 +1,7 @@
+﻿<skin>
+
+<screen name="menuimageicon">
+	<widget name="menuimage" position="700,760" size="256,256" zPosition="2" alphatest="blend" scaleFlags="scaleCenter" transparent="1" />
+</screen>
+
+</skin>

@@ -1,0 +1,198 @@
+<skin>
+
+<screen name="InfoBar" position="0,0" size="1920,1080" title="Infobar" flags="wfNoBorder" backgroundColor="transparent">
+    <panel name="p_bottombar" />
+    <eLabel name="" position="0,775" size="1920,40" backgroundColor="background2" zPosition="-9" />
+    <eLabel name="" position="0,815" backgroundColor="title_line" size="1920,2" zPosition="5" />
+    <eLabel name="" position="0,775" size="1920,305" backgroundColor="background" zPosition="-11" transparent="0" />
+    <!-- CircleProgress -->
+    <ePixmap name="" position="1525,820" size="150,150" pixmap="iFlatFHD/icons/volume/prgrs150green-pastel.png" alphatest="on" zPosition="2" />
+    <ePixmap name="" position="1525,820" size="150,150" pixmap="iFlatFHD/icons/volume/prgrs150back.png" alphatest="on" zPosition="5" transparent="1" />
+    <widget source="session.FrontendStatus" render="iFlatCircleProgress" mode="event" zPosition="3" backgroundColor="background" position="1525,820" size="150,150" transparent="1">
+      <convert type="iFlatSignal">SNR</convert>
+    </widget>
+    <!--ePixmap name="" position="1740,820" size="150,150" pixmap="iFlatFHD/icons/volume/prgrs150yellow-pastel.png" alphatest="on" zPosition="2" />
+    <ePixmap name="" position="1740,820" size="150,150" pixmap="iFlatFHD/icons/volume/prgrs150back.png" alphatest="on" zPosition="5" />
+    <widget source="session.FrontendStatus" render="iFlatCircleProgress" mode="event" zPosition="3" backgroundColor="background2" position="1740,820" size="150,150" transparent="1">
+      <convert type="iFlatSignal">AGC</convert>
+    </widget-->
+    <ePixmap name="" position="1300,820" size="150,150" pixmap="iFlatFHD/icons/volume/prgrs150blue-pastel.png" alphatest="on" zPosition="2" />
+    <ePixmap name="" position="1300,820" size="150,150" pixmap="iFlatFHD/icons/volume/prgrs150back.png" alphatest="on" zPosition="5" transparent="1" />
+    <widget source="session.Event_Now" render="iFlatCircleProgress" mode="event" zPosition="3" backgroundColor="background" position="1300,820" size="150,150" transparent="1">
+      <convert type="iFlatEventTimeInfo">progress</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" font="Regular; 28" position="915,780" size="300,38" zPosition="9" backgroundColor="background2" transparent="1" halign="left" foregroundColor="foreground3">
+      <convert type="iFlatEventTimeInfo">progressing/duration</convert>
+    </widget>
+    <!-- ... -->
+    <eLabel name="" text="%" position="1525,905" size="150, 30" font="Regular; 26" zPosition="9" backgroundColor="background" transparent="1" halign="center" />
+    <!--eLabel name="" text="%" position="1740,905" size="150, 30" font="Regular; 26" zPosition="9" backgroundColor="background2" transparent="1" halign="center" /-->
+    <eLabel name="" text="%" position="1300,905" size="150, 30" font="Regular; 26" zPosition="9" backgroundColor="background" transparent="1" halign="center" />
+    <!-- <widget source="session.Event_Now" render="xtraPoster" delayPic="200" position="0,300" size="278,417" zPosition="1" />
+    <widget source="session.Event_Now" render="Label" position="250,926" size="985,40" font="Regular; 30" transparent="1" zPosition="2" foregroundColor="foreground" backgroundColor="background2" halign="left" valign="center">
+      <convert type="iFlatEventInfo2">SESSION_EPISODE,PARENTAL_RATING,GENRE,YEAR,DURATION</convert>
+    </widget>-->
+    <widget source="session.CurrentService" render="Label" position="250,975" size="985,40" font="Regular; 30" halign="left" transparent="1" zPosition="2" backgroundColor="background2" valign="center">
+      <convert type="iFlatEventInfo3">texts</convert>
+    </widget>
+    <!-- ... -->
+    <widget source="session.CurrentService" render="Label" position="10,775" size="900,40" zPosition="1" font="Regular; 34" backgroundColor="background2" transparent="1" valign="top" foregroundColor="foreground3">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget backgroundColor="background2" font="Regular; 36" zPosition="2" halign="left" position="250,820" size="985,45" render="RunningText" options="movetype=running,startpoint=0,startdelay=3000,steptime=10,wrap=0,always=0,repeat=2,oneshot=1" source="session.Event_Now" transparent="1" foregroundColor="foreground">
+      <convert type="EventName">name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Picon" position="10,835" zPosition="1" size="220,132" transparent="1" alphatest="on" borderWidth="2" borderColor="foreground">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="session.Event_Next" backgroundColor="background2" font="Regular; 28" halign="left" position="250,875" render="Label" size="985,36" transparent="1" zPosition="2" foregroundColor="foreground">
+      <convert type="EventName">name</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="FixedLabel" text="!" font="Regular; 30" zPosition="11" position="1694,975" size="36,36" halign="center" backgroundColor="background2" valign="center" transparent="1" foregroundColor="red">
+      <convert type="iFlatSignal">BER</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <eLabel position="1525,975" size="150,38" text="SNR" zPosition="2" font="Regular; 27" transparent="1" valign="center" halign="center" backgroundColor="background2" />
+    <!--eLabel position="1740,975" size="150,38" text="AGC" zPosition="2" font="Regular; 27" transparent="1" valign="center" halign="center" backgroundColor="background2" /-->
+    <eLabel position="1300,975" size="150,38" text="EVENT" zPosition="2" font="Regular; 27" transparent="1" valign="center" halign="center" backgroundColor="background2" />
+    <widget source="session.RecordState" render="FixedLabel" text="●" font="Regular; 40" position="1235,965" zPosition="11" size="60,60" backgroundColor="background2" halign="center" valign="center" foregroundColor="red" transparent="1">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="10,975" size="220,40" font="Regular; 26" halign="center" backgroundColor="background2" transparent="1" zPosition="2" valign="center" foregroundColor="foreground">
+      <convert type="ServiceName">Provider</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1717,777" size="200,40" font="Regular; 30" valign="center" halign="right" transparent="1" backgroundColor="background2" foregroundColor="foreground3">
+      <convert type="ClockToText">
+      </convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1434,777" size="323,40" font="Regular; 30" valign="center" halign="right" transparent="1" backgroundColor="background2" foregroundColor="foreground3">
+      <convert type="ClockToText">FullDate</convert>
+    </widget>
+    <widget noWrap="1" backgroundColor="background" render="Label" position="1739,947" size="169,64" font="Regular; 30" source="session.CurrentService" transparent="1" zPosition="8" halign="center" foregroundColor="foreground">
+	<convert type="iFlatMSNWeather2">Temp</convert>
+    </widget>
+    <widget alphatest="on" render="iFlatPiconUni" path="iFlatFHD/weather/weather_icons" position="1760,837" size="120,120" source="session.CurrentService" transparent="1" zPosition="8">
+	<convert type="iFlatMSNWeather2">Picon</convert>
+    </widget>
+    <widget foregroundColor="foreground3" backgroundColor="background2" font="Regular; 28" halign="center" position="1202,780" render="Label" size="250,38" source="session.CurrentService" transparent="1" valign="center">
+    <convert type="ServiceInfoEX">%xres X %yres</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="0,1037" size="280,30" font="Regular; 26" zPosition="3" halign="center" noWrap="1" backgroundColor="background2" foregroundColor="foreground3" transparent="1">
+	<convert type="iFlatCamdRAED">Camd</convert>
+    </widget>
+     <!--/* ECM-Info-->
+   
+   <widget source="session.CurrentService" render="Label" position="675,1037" size="1080,30" font="Regular; 26" backgroundColor="background2" foregroundColor="foreground3" transparent="1" zPosition="21" halign="center">
+          <convert type="CaidInfo2" />
+</widget>
+  <!--ECM-Info */-->
+  <!-- /* Network -->
+    <ePixmap pixmap="iFlatFHD/icons/ks1v4/inet_grey.png" position="1771,1042" size="40,20" zPosition="1" alphatest="on" />
+   <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/inet_green.png" position="1771,1042" size="40,20" zPosition="2" alphatest="on">
+    <convert type="iFlatTestConnection">ipinfo.io</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+   <ePixmap pixmap="iFlatFHD/icons/ks1v4/lan_grey.png" position="1817,1042" size="40,20" zPosition="1" alphatest="on" />
+   <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/lan_green.png" position="1817,1042" size="40,20" zPosition="2" alphatest="on">
+   <convert type="RouteInfo">Lan</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+   <ePixmap pixmap="iFlatFHD/icons/ks1v4/wlan_grey.png" position="1863,1042" size="40,20" zPosition="1" alphatest="on" />
+   <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/wlan_green.png" position="1863,1042" size="40,20" zPosition="2" alphatest="on">
+   <convert type="RouteInfo">Wifi</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>      
+  <!-- Network */-->
+    <!-- Cryptinfos -->
+    <ePixmap pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/beta_grey.png" position="295,1042" size="17,20" zPosition="1" alphatest="on" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/beta_yellow.png" position="295,1042" size="17,20" zPosition="2" alphatest="on">
+      <convert type="ExtremeInfo">BetaCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/beta_green.png" position="295,1042" size="17,20" zPosition="3" alphatest="on">
+      <convert type="CaidInfo2">BetaEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget> 
+    <ePixmap pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/irdeto_grey.png" position="317,1042" size="17,20" zPosition="1" alphatest="on" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/irdeto_yellow.png" position="317,1042" size="17,20" zPosition="2" alphatest="on">
+      <convert type="ExtremeInfo">IrdCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/irdeto_green.png" position="317,1042" size="17,20" zPosition="3" alphatest="on">
+      <convert type="ExtremeInfo">IrdEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/seca_grey.png" position="339,1042" size="17,20" zPosition="1" alphatest="on" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/seca_yellow.png" position="339,1042" size="17,20" zPosition="2" alphatest="on">
+      <convert type="ExtremeInfo">SecaCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/seca_green.png" position="339,1042" size="17,20" zPosition="3" alphatest="on">
+      <convert type="ExtremeInfo">SecaEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/via_grey.png" position="361,1042" size="17,20" zPosition="1" alphatest="on" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/via_yellow.png" position="361,1042" size="17,20" zPosition="2" alphatest="on">
+      <convert type="ExtremeInfo">ViaCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/via_green.png" position="361,1042" size="17,20" zPosition="3" alphatest="on">
+      <convert type="ExtremeInfo">ViaEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/nagra_grey.png" position="383,1042" size="17,20" zPosition="1" alphatest="on" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/nagra_yellow.png" position="383,1042" size="17,20" zPosition="2" alphatest="on">
+      <convert type="ExtremeInfo">NagraCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/nagra_green.png" position="383,1042" size="17,20" zPosition="3" alphatest="on">
+      <convert type="ExtremeInfo">NagraEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/cryptoworks_grey.png" position="405,1042" size="37,20" zPosition="1" alphatest="on" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/cryptoworks_yellow.png" position="405,1042" size="37,20" zPosition="2" alphatest="on">
+      <convert type="ExtremeInfo">CrwCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/cryptoworks_green.png" position="405,1042" size="37,20" zPosition="3" alphatest="on">
+      <convert type="ExtremeInfo">CrwEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/nds_grey.png" position="447,1042" size="44,20" zPosition="1" alphatest="on" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/nds_yellow.png" position="447,1042" size="44,20" zPosition="2" alphatest="on">
+      <convert type="ExtremeInfo">NdsCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/nds_green.png" position="447,1042" size="44,20" zPosition="3" alphatest="on">
+      <convert type="ExtremeInfo">NdsEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/c_grey.png" position="496,1042" size="17,20" zPosition="1" alphatest="on" />
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/c_yellow.png" position="496,1042" size="17,20" zPosition="2" alphatest="on">
+      <convert type="ExtremeInfo">ConaxCrypt</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/c_green.png" position="496,1042" size="17,20" zPosition="3" alphatest="on">
+      <convert type="ExtremeInfo">ConaxEcm</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <!--  /* Crypt Source Start  -->
+   <ePixmap pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/card_grey.png" position="525,1042" size="40,20" zPosition="1" alphatest="on" />
+   <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/card_green.png" position="525,1042" size="40,20" zPosition="2" alphatest="on">
+    <convert type="CaidInfo2">Crd</convert>
+    <convert type="ConditionalShowHide" />
+   </widget>
+   <ePixmap pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/line_grey.png" position="570,1042" size="40,20" zPosition="1" alphatest="on" />
+   <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/line_green.png" position="570,1042" size="40,20" zPosition="2" alphatest="on">
+   <convert type="CaidInfo2">Net</convert>
+    <convert type="ConditionalShowHide" />
+   </widget> 
+   <ePixmap pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/emu_grey.png" position="615,1042" size="40,20" zPosition="1" alphatest="on" />
+   <widget source="session.CurrentService" render="Pixmap" pixmap="iFlatFHD/icons/ks1v4/crypticons_klein/emu_green.png" position="615,1042" size="40,20" zPosition="2" alphatest="on">
+   <convert type="CaidInfo2">Emu</convert>
+    <convert type="ConditionalShowHide" />
+   </widget>
+ <!--  Crypt Source End */  -->  
+ </screen>
+  
+</skin>

@@ -1,0 +1,11 @@
+<skin>
+  <screen name="IBTempWidget">
+	<eLabel name="icons" position="0,838" size="1920,37" zPosition="-10" backgroundColor="background" />
+<!-- /* IB_Temp -->
+	<eLabel foregroundColor="foreground" backgroundColor="background" font="Regular; 23" halign="right" noWrap="1" position="535,843" size="70,27" text="CPU.:" transparent="1" valign="top" />
+	<widget backgroundColor="background" foregroundColor="red" font="Regular; 23" halign="left" position="615,843" size="70,27" render="Label" source="session.CurrentService" transparent="1" zPosition="3">
+    	<convert type="iFlatCpuUsage">Total</convert>
+    </widget>
+<!-- IB_Temp */--> 
+  </screen>
+</skin>

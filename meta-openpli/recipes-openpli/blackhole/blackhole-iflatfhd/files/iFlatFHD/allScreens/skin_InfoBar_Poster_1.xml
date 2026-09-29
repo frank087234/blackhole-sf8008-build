@@ -1,0 +1,9 @@
+<skin>
+
+
+    <screen name="IBPosterWidget">
+          <widget source="session.Event_Now" backgroundColor="background2" render="xtraPoster" position="1758,884" size="104,125" zPosition="2"/>
+    </screen>
+
+
+</skin>

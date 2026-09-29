@@ -1,0 +1,7 @@
+<skin>
+<screen name="IBCAMICONWidget">
+	<!-- /* Cam Info Name -->
+	<widget source="session.CurrentService" render="iFlatPicEmuF" path="piconCam" position="80,1020" size="100,60" transparent="1" alphatest="on" zPosition="3" />
+	<!-- Cam Info Name */-->
+</screen>
+</skin>

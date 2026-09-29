@@ -1,0 +1,44 @@
+﻿<skin>
+
+<screen name="ChannelSelection" position="0,0" size="1920,1080" title="Channel Selection" flags="wfNoBorder">
+  <panel name="dateclock" />
+  <panel name="p_topbar" />
+  <panel name="p_bottombar" />
+  <panel name="p_centerbar1920" />
+  <panel name="p_color_labels" />
+  <panel name="NumberEpgchannellist" />
+  <eLabel name="line_s" position="1250,60" size="1,390" zPosition="5" backgroundColor="line_s" />
+  <eLabel name="line_s" position="0,451" size="1920,1" zPosition="5" backgroundColor="line_s" />
+  <widget source="ServiceEvent" position="1255,0" size="95,57" render="Picon" transparent="1" alphatest="blend" zPosition="2">
+  <convert type="ServiceName">Reference</convert>
+  </widget>
+  <widget source="ServiceEvent" position="15,63" size="650,48" render="iFlatRunningText" options="movetype=running,startpoint=0,direction=left,steptime=50,repeat=2,startdelay=4000,wrap,always=2" font="Regular; 38" halign="left" valign="top" foregroundColor="foreground2" backgroundColor="background" transparent="1">
+  <convert type="EventName">Description</convert>
+  </widget>
+  <widget source="ServiceEvent" position="13,114" size="1222,326" render="iFlatRunningText" options="movetype=running,startpoint=0,direction=top,steptime=95,repeat=2,startdelay=8000,wrap,always=2" font="Regular; 32" valign="top" foregroundColor="foreground" backgroundColor="background" transparent="1">
+  <convert type="EventName">ExtendedDescription</convert>
+  </widget>
+  <widget source="ServiceEvent" position="665,73" size="110,30" render="Label" font="Regular; 25" halign="right" backgroundColor="background" transparent="1">
+  	<convert type="EventTime">StartTime</convert>
+  	<convert type="ClockToText" />
+  </widget>
+  <widget source="ServiceEvent" position="1145,73" size="100,30" render="Label" font="Regular; 25" backgroundColor="background" transparent="1">
+  	<convert type="EventTime">EndTime</convert>
+  	<convert type="ClockToText">Format:%H:%M</convert>
+  </widget>
+  <widget source="ServiceEvent" position="781,86" size="356,5" render="Progress" foregroundColor="progress" transparent="1" zPosition="1">
+  	<convert type="EventTime">Progress</convert>
+  </widget>
+  <eLabel name="progress_bg" position="781,88" size="356,1" backgroundColor="progress_bg" />
+  <widget source="Title" position="15,6" size="1220,50" render="iFlatFavName" font="Regular; 42" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="list" position="15,462" size="1893,530" foregroundColor="foreground" backgroundColor="background" transparent="1" colorServiceWithAdvertisment="chs_advertise" colorServiceDescription="chs_desc" colorServiceDescriptionSelected="chs_desc_sel" foregroundColorSelected="chs_fg_sel" foregroundColorServiceNotAvail="chs_notavail" colorServiceRecording="chs_record" progressbarHeight="20" progressBarWidth="78" colorEventProgressbar="chs_progress" colorEventProgressbarSelected="chs_progress_sel" colorEventProgressbarBorder="chs_progressbd" colorEventProgressbarBorderSelected="chs_progressbd_sel" serviceItemHeight="48" serviceNumberFont="Regular;33" serviceNameFont="Regular;33" serviceInfoFont="Regular;33" scrollbarMode="showOnDemand" scrollbarWidth="3" scrollbarSliderForegroundColor="scrollbarsfgc" scrollbarSliderBorderColor="scrollbarsbgc" scrollbarSliderBorderWidth="0" valign="top" />
+  <widget alphatest="blend" render="iFlatEventListDisplay" position="1257,65" size="660,380" source="ServiceEvent" rowHeight="32" column0="0,70,white,Regular,26,0,0" column1="80,900,#99ccff,Regular,26,0,1" primetimeoffset="10">
+    <convert type="iFlatEventList">eventcount=27</convert>
+  </widget>
+  <widget name="key_red" position="15,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="key_green" position="310,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="key_yellow" position="605,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+  <widget name="key_blue" position="900,1037" size="280,36" font="Regular; 28" halign="center" valign="bottom" foregroundColor="foreground3" backgroundColor="background2" transparent="1" />
+</screen>
+
+</skin>

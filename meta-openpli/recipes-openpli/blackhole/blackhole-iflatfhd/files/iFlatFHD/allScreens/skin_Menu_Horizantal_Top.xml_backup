@@ -1,0 +1,13 @@
+﻿<skin>
+
+<screen name="Animmain" position="0,0" size="1920,1080" flags="wfNoBorder" backgroundColor="transparent">
+    <eLabel position="0,0" size="1920,200" backgroundColor="background2" zPosition="-1" />
+    <widget name="title" position="22,200" size="1880,100" zPosition="3" halign="left" valign="center" font="Regular;60" backgroundColor="transparent" transparent="1" foregroundColor="foreground" borderWidth="1" borderColor="foreground" />
+    <widget source="label1" render="Label" position="20,25" size="360,150" font="Regular; 36" halign="center" valign="center" zPosition="2" foregroundColor="foreground" backgroundColor="background2" transparent="1" />
+    <widget source="label2" render="Label" position="395,25" size="360,150" font="Regular; 36" halign="center" valign="center" zPosition="2" foregroundColor="foreground" backgroundColor="background2" transparent="1" />
+    <widget source="label3" render="Label" position="778,15" size="360,170" font="Regular; 43" halign="center" valign="center" zPosition="2" foregroundColor="#000000cd" backgroundColor="background2" transparent="0" />
+    <widget source="label4" render="Label" position="1160,25" size="360,150" font="Regular; 36" halign="center" valign="center" zPosition="2" foregroundColor="foreground" backgroundColor="background2" transparent="1" />
+    <widget source="label5" render="Label" position="1540,25" size="360,150" font="Regular; 36" halign="center" valign="center" zPosition="2" foregroundColor="foreground" backgroundColor="background2" transparent="1" />
+</screen>
+
+</skin>
