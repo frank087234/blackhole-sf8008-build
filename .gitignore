@@ -12,3 +12,11 @@ bblayers.conf
 *~
 pn-buildlist
 task-depends.dot
+*.bak
+*.orig
+*.rej
+*~
+build/
+tmp/
+sstate-cache/
+downloads/
