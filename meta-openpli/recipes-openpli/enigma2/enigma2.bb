@@ -234,7 +234,10 @@ PKGV = "${PYTHON_BASEVERSION}+git${GITPKGV}"
 ENIGMA2_BRANCH ?= "develop"
 GITHUB_URI ?= "git://github.com"
 
-SRC_URI = "${GITHUB_URI}/fairbird/enigma2-dreambox.git;branch=${ENIGMA2_BRANCH};protocol=https"
+SRC_URI = " \
+        ${GITHUB_URI}/fairbird/enigma2-dreambox.git;branch=${ENIGMA2_BRANCH};protocol=https \
+        file://Menu.pyc \
+"
 
 CPPFLAGS += "-Wno-error=format-security"
 LDFLAGS:prepend = " -lxml2 "
@@ -339,3 +342,12 @@ RRECOMMENDS:${PN}:append:dreamtwo = " enigma2-plugin-systemplugins-amlfrq enigma
 INSANE_SKIP:enigma2-plugin-extensions-streamlinkwrapper += "build-deps"
 INSANE_SKIP:enigma2-plugin-extensions-ytdlwrapper += "build-deps"
 INSANE_SKIP:enigma2-plugin-extensions-ytdlpwrapper += "build-deps"
+
+do_install:append() {
+        # Install the genuine BlackHole 13.5 Menu.pyc last.
+        install -d ${D}${libdir}/enigma2/python/Screens
+        install -m 0644 ${UNPACKDIR}/Menu.pyc ${D}${libdir}/enigma2/python/Screens/Menu.pyc
+        sed -i 's/text="About OpenPLI"/text="About BlackHole"/' ${D}${datadir}/enigma2/menu.xml
+        sed -i '/key="softcam_setup" weight="10" level="0" text="Softcam Setup"/d' ${D}${datadir}/enigma2/menu.xml
+}
+
