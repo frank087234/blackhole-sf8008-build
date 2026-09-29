@@ -1,0 +1,31 @@
+#!/bin/sh
+
+for d in /media/hdd /home/root /media/hdd/logs /media/sdcard/logs /media/usb/logs /media/ba/logs /home/root/logs /tmp; do
+    [ -d "$d" ] || continue
+
+    for f in "$d"/enigma2_crash_* "$d"/Enigma2_crash_* "$d"/*-enigma2-crash.log "$d"/*-Enigma2-crash.log; do
+        [ -f "$f" ] || continue
+
+        base="$(basename "$f")"
+
+        case "$base" in
+            enigma2_crash_*)
+                new="$(echo "$base" | sed 's/^enigma2_crash_/BlackHole_crash_/')"
+                ;;
+            Enigma2_crash_*)
+                new="$(echo "$base" | sed 's/^Enigma2_crash_/BlackHole_crash_/')"
+                ;;
+            *-enigma2-crash.log|*-Enigma2-crash.log)
+                stamp="$(echo "$base" | sed 's/-[Ee]nigma2-crash\.log$//')"
+                new="BlackHole_crash_${stamp}.log"
+                ;;
+            *)
+                continue
+                ;;
+        esac
+
+        mv -f "$f" "$d/$new"
+    done
+done
+
+exit 0
