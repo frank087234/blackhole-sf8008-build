@@ -1,0 +1,45 @@
+#!/bin/sh
+
+# bootlogos BH v0.8.2 hybrid
+# SF8008 displays /usr/share/bootlogo.mvi, so make it follow jump_screen.
+# Keep /usr/share/blackhole-bootlogo/bootlogo.mvi untouched as stock backup.
+
+ROOT="${1:-}"
+
+mkdir -p "$ROOT/bin"
+mkdir -p "$ROOT/usr/share"
+mkdir -p "$ROOT/etc/enigma2"
+mkdir -p "$ROOT/etc/enigma2/skin_common"
+
+# Make GUI Black Hole universe option valid.
+# GUI calls /usr/share/Black_Hole.mvi.
+if [ ! -e "$ROOT/usr/share/Black_Hole.mvi" ] && [ -f "$ROOT/usr/share/blackhole-bootlogo/bootlogo.mvi" ]; then
+    ln -sf /usr/share/blackhole-bootlogo/bootlogo.mvi "$ROOT/usr/share/Black_Hole.mvi"
+fi
+
+
+if [ ! -f "$ROOT/bin/jump_screen.mvi" ]; then
+    if [ -f "$ROOT/usr/share/Avalon.mvi" ]; then
+        cp -f "$ROOT/usr/share/Avalon.mvi" "$ROOT/bin/jump_screen.mvi"
+    elif [ -f "$ROOT/usr/share/Chaos.mvi" ]; then
+        cp -f "$ROOT/usr/share/Chaos.mvi" "$ROOT/bin/jump_screen.mvi"
+    elif [ -f "$ROOT/usr/share/Ghost.mvi" ]; then
+        cp -f "$ROOT/usr/share/Ghost.mvi" "$ROOT/bin/jump_screen.mvi"
+    fi
+fi
+
+rm -f "$ROOT/usr/share/bootlogo.mvi"
+ln -sf /bin/jump_screen.mvi "$ROOT/usr/share/bootlogo.mvi"
+
+rm -f "$ROOT/usr/share/backdrop.mvi"
+ln -sf /usr/share/bootlogo.mvi "$ROOT/usr/share/backdrop.mvi"
+
+rm -f "$ROOT/etc/enigma2/backdrop.mvi"
+ln -sf /usr/share/bootlogo.mvi "$ROOT/etc/enigma2/backdrop.mvi"
+
+rm -f "$ROOT/etc/enigma2/skin_common/backdrop.mvi"
+ln -sf /usr/share/bootlogo.mvi "$ROOT/etc/enigma2/skin_common/backdrop.mvi"
+
+chmod 644 "$ROOT/bin/jump_screen.mvi" 2>/dev/null || true
+sync
+exit 0

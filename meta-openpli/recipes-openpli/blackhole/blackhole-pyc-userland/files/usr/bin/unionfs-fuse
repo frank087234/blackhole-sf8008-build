@@ -1,0 +1,11 @@
+#!/bin/sh
+while [ "$1" = "-o" ]; do
+    shift 2
+done
+BRANCHES="$1"
+RWBRANCH=$(echo "$BRANCHES" | tr ':' '\n' | sed -n 's/=RW$//p' | head -1)
+[ -z "$RWBRANCH" ] && echo "unionfs-fuse wrapper: no RW branch found" > /tmp/jump.tmp && exit 1
+UNIVERSE_DIR="${RWBRANCH%/workdir}"
+mkdir -p "$UNIVERSE_DIR/usr" "$UNIVERSE_DIR/workdir"
+modprobe overlay 2>/dev/null
+mount -t overlay overlay -o lowerdir=/usr,upperdir="$UNIVERSE_DIR/usr",workdir="$UNIVERSE_DIR/workdir" /usr

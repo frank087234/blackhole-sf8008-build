@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# bootlogos BH v0.8.2 safe sync
+# Do NOT copy Avalon/Chaos/Ghost into /usr/share/blackhole-bootlogo.
+# Only restore the active symlink layout.
+
+[ -x /usr/bin/bh-v07-bootlogo-link ] && /usr/bin/bh-v07-bootlogo-link
+
+exit 0

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+case "$1" in
+    start)
+        [ -x /usr/bin/bh-sync-bootlogo ] && /usr/bin/bh-sync-bootlogo
+        ;;
+esac
+
+exit 0

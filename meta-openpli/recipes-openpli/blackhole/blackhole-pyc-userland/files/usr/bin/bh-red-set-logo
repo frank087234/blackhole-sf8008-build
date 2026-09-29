@@ -1,0 +1,22 @@
+#!/bin/sh
+
+# bootlogos BH v0.8.2 hybrid
+# Copy selected universe to jump/boot, then make /usr/share/bootlogo.mvi follow it.
+# Keep /usr/share/blackhole-bootlogo/bootlogo.mvi untouched as stock backup.
+
+src="$1"
+
+if [ -z "$src" ] || [ ! -f "$src" ]; then
+    echo "bh-red-set-logo: missing source MVI: $src"
+    exit 1
+fi
+
+cp -f "$src" /bin/jump_screen.mvi
+cp -f "$src" /boot/bootlogo.mvi
+
+chmod 644 /bin/jump_screen.mvi /boot/bootlogo.mvi 2>/dev/null || true
+
+[ -x /usr/bin/bh-v07-bootlogo-link ] && /usr/bin/bh-v07-bootlogo-link
+
+sync
+exit 0
